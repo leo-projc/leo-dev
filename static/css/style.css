@@ -1,13 +1,145 @@
-*   {
-
+* {
+  box-sizing: border-box;
 }
+html,
 body {
+  min-height: 100%;
+}
 
+body {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+main {
+  position: relative;
+  flex: 1;
+}
+
+.landing-hero {
+  position: relative;
+  min-height: calc(100vh - 102px);
+}
+
+.landing-card-section {
+  padding-top: 4rem;
+  padding-bottom: 3rem;
+}
+
+.content-card {
+  display: flex;
+  min-height: 50vh;
+  overflow: hidden;
+  border: 1px solid #333;
+  border-radius: 0.5rem;
+  background-color: #111;
+}
+
+.content-card-image {
+  flex: 0 0 40%;
+  min-width: 0;
+  background-color: #222;
+  border-right: 1px solid #333;
+}
+
+.content-card-text {
+  display: flex;
+  flex: 0 0 60%;
+  flex-direction: column;
+  justify-content: center;
+  padding: 2rem;
+}
+
+.content-card-text h2 {
+  margin-top: 0;
+}
+
+/* Keep the card usable on narrow screens. */
+@media (max-width: 576px) {
+  .content-card {
+    min-height: 50vh;
+  }
+
+  .content-card-text {
+    padding: 1.25rem;
+  }
+}
+
+.footer-container {
+  flex-shrink: 0;
+}
+
+.footer-container hr {
+  margin: 0.25rem 0;
+  border-color: #333;
+}
+
+body {
+  background-color: #000 !important;
+  color: #fff !important;
 }
 .container {
-
+  color: #fff;
 }
 
 .row {
-    
+}
+.navbar {
+  background-color: #000 !important;
+  border-bottom: 1px solid #222;
+}
+
+.navbar-brand,
+.nav-link {
+  color: #fff !important;
+}
+
+.nav-link:hover {
+  color: #ccc !important;
+}
+
+footer,
+.footer-container {
+  padding: 0.25rem 0;
+  font-size: 0.8rem;
+}
+
+footer hr {
+  margin: 0.25rem 0;
+  border-color: #333;
+}
+
+footer a {
+  color: #ccc;
+  margin-right: 1rem;
+  text-decoration: none;
+}
+
+footer a:hover {
+  color: #fff;
+}
+
+@font-face {
+  font-family: "Geomatic";
+  src: url("../fonts/Geomatic.woff2") format("woff2");
+  font-display: swap;
+}
+
+body,
+button,
+input,
+textarea,
+select {
+  font-family: "Geomatic", Arial, sans-serif;
+}
+
+.site-title {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: max-content !important;
+  margin: 0;
+  transform: translate(-50%, -50%);
+  white-space: nowrap;
 }

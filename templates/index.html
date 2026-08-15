@@ -1,11 +1,25 @@
-{% extends 'layout.html' %}
-{% block content %}
-<div class="container">
-    <div class="row">
-        <h1 class="display-1">Hello world!</h1>
-    </div>
-    <div class="row">
+{% extends 'layout.html' %} {% block content %}
+<div class="landing-hero container">
+  <div class="row">
+    <h1 class="display-1 site-title">leo.projc</h1>
+  </div>
+</div>
 
+<div class="container landing-card-section">
+  <article class="content-card">
+    <div
+      class="content-card-image"
+      role="img"
+      aria-label="Image placeholder"
+    ></div>
+    <div class="content-card-text">
+      <h2>About</h2>
+      <p>Hi, I'm <strong>Leo Projceski</strong></p>
+      <p>
+        I'm a current year 12 student undertaking the HSC, aspiring to become
+        software engineer.
+      </p>
     </div>
+  </article>
 </div>
 {% endblock %}
