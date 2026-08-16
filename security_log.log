@@ -264,3 +264,591 @@
 2026-08-15 12:16:49,203 127.0.0.1 - - [15/Aug/2026 12:16:49] "[36mGET /static/js/serviceWorker.js HTTP/1.1[0m" 304 -
 2026-08-15 12:16:49,244 127.0.0.1 - - [15/Aug/2026 12:16:49] "[36mGET /static/js/app.js HTTP/1.1[0m" 304 -
 2026-08-15 12:16:49,329 127.0.0.1 - - [15/Aug/2026 12:16:49] "[36mGET /static/images/favicon.png HTTP/1.1[0m" 304 -
+2026-08-16 08:18:56,369 [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://10.0.0.201:5000
+2026-08-16 08:18:56,370 [33mPress CTRL+C to quit[0m
+2026-08-16 08:18:56,372  * Restarting with stat
+2026-08-16 08:18:56,657  * Debugger is active!
+2026-08-16 08:18:57,194  * Debugger PIN: 465-741-666
+2026-08-16 08:19:00,219 127.0.0.1 - - [16/Aug/2026 08:19:00] "GET / HTTP/1.1" 200 -
+2026-08-16 08:19:00,441 127.0.0.1 - - [16/Aug/2026 08:19:00] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2026-08-16 08:19:00,470 127.0.0.1 - - [16/Aug/2026 08:19:00] "[36mGET /static/css/bootstrap.min.css HTTP/1.1[0m" 304 -
+2026-08-16 08:19:00,471 127.0.0.1 - - [16/Aug/2026 08:19:00] "[36mGET /static/js/bootstrap.bundle.min.js HTTP/1.1[0m" 304 -
+2026-08-16 08:19:00,512 {"csp-report":{"document-uri":"https://obscure-cod-x66gvwxp957f6697-5000.app.github.dev/","referrer":"https://obscure-cod-x66gvwxp957f6697.github.dev/","violated-directive":"manifest-src","effective-directive":"manifest-src","original-policy":"script-src 'self'; img-src 'self' data:; child-src 'self'; default-src 'self'; style-src 'self'; media-src 'self'; object-src 'self'; connect-src 'self'; base-uri 'self'; report-uri /csp_report; font-src 'self'; worker-src 'self'; frame-ancestors 'none'; form-action 'self'; frame-src 'none'","disposition":"enforce","blocked-uri":"https://obscure-cod-x66gvwxp957f6697-5000.app.github.dev/static/manifest.json","status-code":200,"script-sample":""}}
+2026-08-16 08:19:00,512 127.0.0.1 - - [16/Aug/2026 08:19:00] "POST /csp_report HTTP/1.1" 200 -
+2026-08-16 08:19:00,608 127.0.0.1 - - [16/Aug/2026 08:19:00] "[36mGET /static/js/serviceWorker.js HTTP/1.1[0m" 304 -
+2026-08-16 08:19:00,643 127.0.0.1 - - [16/Aug/2026 08:19:00] "[36mGET /static/js/app.js HTTP/1.1[0m" 304 -
+2026-08-16 08:21:04,481 127.0.0.1 - - [16/Aug/2026 08:21:04] "GET / HTTP/1.1" 200 -
+2026-08-16 08:21:04,563 127.0.0.1 - - [16/Aug/2026 08:21:04] "GET /static/css/style.css HTTP/1.1" 200 -
+2026-08-16 08:21:04,680 {"csp-report":{"document-uri":"https://obscure-cod-x66gvwxp957f6697-5000.app.github.dev/","referrer":"","violated-directive":"manifest-src","effective-directive":"manifest-src","original-policy":"script-src 'self'; img-src 'self' data:; child-src 'self'; default-src 'self'; style-src 'self'; media-src 'self'; object-src 'self'; connect-src 'self'; base-uri 'self'; report-uri /csp_report; font-src 'self'; worker-src 'self'; frame-ancestors 'none'; form-action 'self'; frame-src 'none'","disposition":"enforce","blocked-uri":"https://obscure-cod-x66gvwxp957f6697-5000.app.github.dev/static/manifest.json","status-code":200,"script-sample":""}}
+2026-08-16 08:21:04,681 127.0.0.1 - - [16/Aug/2026 08:21:04] "POST /csp_report HTTP/1.1" 200 -
+2026-08-16 08:21:04,681 127.0.0.1 - - [16/Aug/2026 08:21:04] "[36mGET /static/js/bootstrap.bundle.min.js HTTP/1.1[0m" 304 -
+2026-08-16 08:21:04,689 127.0.0.1 - - [16/Aug/2026 08:21:04] "[36mGET /static/css/bootstrap.min.css HTTP/1.1[0m" 304 -
+2026-08-16 08:21:04,752 127.0.0.1 - - [16/Aug/2026 08:21:04] "[36mGET /static/js/serviceWorker.js HTTP/1.1[0m" 304 -
+2026-08-16 08:21:04,795 127.0.0.1 - - [16/Aug/2026 08:21:04] "[36mGET /static/js/app.js HTTP/1.1[0m" 304 -
+2026-08-16 08:21:04,860 127.0.0.1 - - [16/Aug/2026 08:21:04] "[36mGET /static/images/favicon.png HTTP/1.1[0m" 304 -
+2026-08-16 08:22:33,375 127.0.0.1 - - [16/Aug/2026 08:22:33] "GET /privacy.html HTTP/1.1" 200 -
+2026-08-16 08:22:33,445 127.0.0.1 - - [16/Aug/2026 08:22:33] "[36mGET /static/css/bootstrap.min.css HTTP/1.1[0m" 304 -
+2026-08-16 08:22:33,469 127.0.0.1 - - [16/Aug/2026 08:22:33] "[36mGET /static/js/bootstrap.bundle.min.js HTTP/1.1[0m" 304 -
+2026-08-16 08:22:33,469 127.0.0.1 - - [16/Aug/2026 08:22:33] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2026-08-16 08:22:33,606 127.0.0.1 - - [16/Aug/2026 08:22:33] "[36mGET /static/js/serviceWorker.js HTTP/1.1[0m" 304 -
+2026-08-16 08:22:33,718 127.0.0.1 - - [16/Aug/2026 08:22:33] "[36mGET /static/js/app.js HTTP/1.1[0m" 304 -
+2026-08-16 08:22:35,546 127.0.0.1 - - [16/Aug/2026 08:22:35] "GET / HTTP/1.1" 200 -
+2026-08-16 08:22:35,671 {"csp-report":{"document-uri":"https://obscure-cod-x66gvwxp957f6697-5000.app.github.dev/","referrer":"","violated-directive":"manifest-src","effective-directive":"manifest-src","original-policy":"script-src 'self'; img-src 'self' data:; child-src 'self'; default-src 'self'; style-src 'self'; media-src 'self'; object-src 'self'; connect-src 'self'; base-uri 'self'; report-uri /csp_report; font-src 'self'; worker-src 'self'; frame-ancestors 'none'; form-action 'self'; frame-src 'none'","disposition":"enforce","blocked-uri":"https://obscure-cod-x66gvwxp957f6697-5000.app.github.dev/static/manifest.json","status-code":200,"script-sample":""}}
+2026-08-16 08:22:35,671 127.0.0.1 - - [16/Aug/2026 08:22:35] "POST /csp_report HTTP/1.1" 200 -
+2026-08-16 08:22:50,465  * Detected change in '/workspaces/leo-dev/main.py', reloading
+2026-08-16 08:22:50,499  * Restarting with stat
+2026-08-16 08:25:42,590 [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://10.0.0.201:5000
+2026-08-16 08:25:42,590 [33mPress CTRL+C to quit[0m
+2026-08-16 08:25:42,591  * Restarting with stat
+2026-08-16 08:25:42,952  * Debugger is active!
+2026-08-16 08:25:42,955  * Debugger PIN: 465-741-666
+2026-08-16 08:25:44,616 127.0.0.1 - - [16/Aug/2026 08:25:44] "GET / HTTP/1.1" 200 -
+2026-08-16 08:25:44,863 127.0.0.1 - - [16/Aug/2026 08:25:44] "[36mGET /static/css/bootstrap.min.css HTTP/1.1[0m" 304 -
+2026-08-16 08:25:44,889 127.0.0.1 - - [16/Aug/2026 08:25:44] "[36mGET /static/js/bootstrap.bundle.min.js HTTP/1.1[0m" 304 -
+2026-08-16 08:25:44,899 127.0.0.1 - - [16/Aug/2026 08:25:44] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2026-08-16 08:25:44,952 {"csp-report":{"document-uri":"https://obscure-cod-x66gvwxp957f6697-5000.app.github.dev/","referrer":"https://obscure-cod-x66gvwxp957f6697.github.dev/","violated-directive":"manifest-src","effective-directive":"manifest-src","original-policy":"script-src 'self'; img-src 'self' data:; child-src 'self'; default-src 'self'; style-src 'self'; media-src 'self'; object-src 'self'; connect-src 'self'; base-uri 'self'; report-uri /csp_report; font-src 'self'; worker-src 'self'; frame-ancestors 'none'; form-action 'self'; frame-src 'none'","disposition":"enforce","blocked-uri":"https://obscure-cod-x66gvwxp957f6697-5000.app.github.dev/static/manifest.json","status-code":200,"script-sample":""}}
+2026-08-16 08:25:44,952 127.0.0.1 - - [16/Aug/2026 08:25:44] "POST /csp_report HTTP/1.1" 200 -
+2026-08-16 08:25:44,980 127.0.0.1 - - [16/Aug/2026 08:25:44] "[36mGET /static/js/serviceWorker.js HTTP/1.1[0m" 304 -
+2026-08-16 08:25:45,085 127.0.0.1 - - [16/Aug/2026 08:25:45] "[36mGET /static/js/app.js HTTP/1.1[0m" 304 -
+2026-08-16 08:25:45,176 127.0.0.1 - - [16/Aug/2026 08:25:45] "[36mGET /static/images/favicon.png HTTP/1.1[0m" 304 -
+2026-08-16 08:25:46,187 127.0.0.1 - - [16/Aug/2026 08:25:46] "GET /about.html HTTP/1.1" 200 -
+2026-08-16 08:25:46,259 127.0.0.1 - - [16/Aug/2026 08:25:46] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2026-08-16 08:25:48,302 127.0.0.1 - - [16/Aug/2026 08:25:48] "GET / HTTP/1.1" 200 -
+2026-08-16 08:25:48,412 {"csp-report":{"document-uri":"https://obscure-cod-x66gvwxp957f6697-5000.app.github.dev/","referrer":"https://obscure-cod-x66gvwxp957f6697.github.dev/","violated-directive":"manifest-src","effective-directive":"manifest-src","original-policy":"script-src 'self'; img-src 'self' data:; child-src 'self'; default-src 'self'; style-src 'self'; media-src 'self'; object-src 'self'; connect-src 'self'; base-uri 'self'; report-uri /csp_report; font-src 'self'; worker-src 'self'; frame-ancestors 'none'; form-action 'self'; frame-src 'none'","disposition":"enforce","blocked-uri":"https://obscure-cod-x66gvwxp957f6697-5000.app.github.dev/static/manifest.json","status-code":200,"script-sample":""}}
+2026-08-16 08:25:48,413 127.0.0.1 - - [16/Aug/2026 08:25:48] "POST /csp_report HTTP/1.1" 200 -
+2026-08-16 08:26:36,193 127.0.0.1 - - [16/Aug/2026 08:26:36] "GET / HTTP/1.1" 200 -
+2026-08-16 08:26:36,256 127.0.0.1 - - [16/Aug/2026 08:26:36] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2026-08-16 08:26:36,260 127.0.0.1 - - [16/Aug/2026 08:26:36] "[36mGET /static/css/bootstrap.min.css HTTP/1.1[0m" 304 -
+2026-08-16 08:26:36,271 127.0.0.1 - - [16/Aug/2026 08:26:36] "[36mGET /static/js/bootstrap.bundle.min.js HTTP/1.1[0m" 304 -
+2026-08-16 08:26:36,346 {"csp-report":{"document-uri":"https://obscure-cod-x66gvwxp957f6697-5000.app.github.dev/","referrer":"https://obscure-cod-x66gvwxp957f6697.github.dev/","violated-directive":"manifest-src","effective-directive":"manifest-src","original-policy":"script-src 'self'; img-src 'self' data:; child-src 'self'; default-src 'self'; style-src 'self'; media-src 'self'; object-src 'self'; connect-src 'self'; base-uri 'self'; report-uri /csp_report; font-src 'self'; worker-src 'self'; frame-ancestors 'none'; form-action 'self'; frame-src 'none'","disposition":"enforce","blocked-uri":"https://obscure-cod-x66gvwxp957f6697-5000.app.github.dev/static/manifest.json","status-code":200,"script-sample":""}}
+2026-08-16 08:26:36,346 127.0.0.1 - - [16/Aug/2026 08:26:36] "POST /csp_report HTTP/1.1" 200 -
+2026-08-16 08:26:36,347 127.0.0.1 - - [16/Aug/2026 08:26:36] "[36mGET /static/js/serviceWorker.js HTTP/1.1[0m" 304 -
+2026-08-16 08:26:36,387 127.0.0.1 - - [16/Aug/2026 08:26:36] "[36mGET /static/js/app.js HTTP/1.1[0m" 304 -
+2026-08-16 08:26:36,439 127.0.0.1 - - [16/Aug/2026 08:26:36] "[36mGET /static/images/favicon.png HTTP/1.1[0m" 304 -
+2026-08-16 08:26:37,407 127.0.0.1 - - [16/Aug/2026 08:26:37] "GET /about.html HTTP/1.1" 200 -
+2026-08-16 08:26:37,479 127.0.0.1 - - [16/Aug/2026 08:26:37] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2026-08-16 08:26:37,486 127.0.0.1 - - [16/Aug/2026 08:26:37] "[36mGET /static/css/bootstrap.min.css HTTP/1.1[0m" 304 -
+2026-08-16 08:26:37,486 127.0.0.1 - - [16/Aug/2026 08:26:37] "[36mGET /static/js/bootstrap.bundle.min.js HTTP/1.1[0m" 304 -
+2026-08-16 08:26:37,549 127.0.0.1 - - [16/Aug/2026 08:26:37] "[36mGET /static/js/serviceWorker.js HTTP/1.1[0m" 304 -
+2026-08-16 08:26:37,552 127.0.0.1 - - [16/Aug/2026 08:26:37] "[33mGET /static/fonts/Geomatic.woff2 HTTP/1.1[0m" 404 -
+2026-08-16 08:26:37,588 127.0.0.1 - - [16/Aug/2026 08:26:37] "[36mGET /static/js/app.js HTTP/1.1[0m" 304 -
+2026-08-16 08:27:00,771 127.0.0.1 - - [16/Aug/2026 08:27:00] "GET /about.html HTTP/1.1" 200 -
+2026-08-16 08:27:00,835 127.0.0.1 - - [16/Aug/2026 08:27:00] "[36mGET /static/css/bootstrap.min.css HTTP/1.1[0m" 304 -
+2026-08-16 08:27:00,838 127.0.0.1 - - [16/Aug/2026 08:27:00] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2026-08-16 08:27:00,841 127.0.0.1 - - [16/Aug/2026 08:27:00] "[36mGET /static/js/bootstrap.bundle.min.js HTTP/1.1[0m" 304 -
+2026-08-16 08:27:00,882 127.0.0.1 - - [16/Aug/2026 08:27:00] "[36mGET /static/js/serviceWorker.js HTTP/1.1[0m" 304 -
+2026-08-16 08:27:00,925 127.0.0.1 - - [16/Aug/2026 08:27:00] "[36mGET /static/js/app.js HTTP/1.1[0m" 304 -
+2026-08-16 08:27:03,813 127.0.0.1 - - [16/Aug/2026 08:27:03] "GET /about.html HTTP/1.1" 200 -
+2026-08-16 08:27:03,877 127.0.0.1 - - [16/Aug/2026 08:27:03] "[36mGET /static/js/bootstrap.bundle.min.js HTTP/1.1[0m" 304 -
+2026-08-16 08:27:03,881 127.0.0.1 - - [16/Aug/2026 08:27:03] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2026-08-16 08:27:03,883 127.0.0.1 - - [16/Aug/2026 08:27:03] "[36mGET /static/css/bootstrap.min.css HTTP/1.1[0m" 304 -
+2026-08-16 08:27:03,940 127.0.0.1 - - [16/Aug/2026 08:27:03] "[36mGET /static/js/serviceWorker.js HTTP/1.1[0m" 304 -
+2026-08-16 08:27:03,984 127.0.0.1 - - [16/Aug/2026 08:27:03] "[36mGET /static/js/app.js HTTP/1.1[0m" 304 -
+2026-08-16 08:27:08,493 127.0.0.1 - - [16/Aug/2026 08:27:08] "GET /about.html HTTP/1.1" 200 -
+2026-08-16 08:27:08,556 127.0.0.1 - - [16/Aug/2026 08:27:08] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2026-08-16 08:27:08,559 127.0.0.1 - - [16/Aug/2026 08:27:08] "[36mGET /static/css/bootstrap.min.css HTTP/1.1[0m" 304 -
+2026-08-16 08:27:08,562 127.0.0.1 - - [16/Aug/2026 08:27:08] "[36mGET /static/js/bootstrap.bundle.min.js HTTP/1.1[0m" 304 -
+2026-08-16 08:27:08,606 127.0.0.1 - - [16/Aug/2026 08:27:08] "[36mGET /static/js/serviceWorker.js HTTP/1.1[0m" 304 -
+2026-08-16 08:27:08,640 127.0.0.1 - - [16/Aug/2026 08:27:08] "[36mGET /static/js/app.js HTTP/1.1[0m" 304 -
+2026-08-16 08:27:36,034  * Detected change in '/workspaces/leo-dev/main.py', reloading
+2026-08-16 08:27:36,077  * Restarting with stat
+2026-08-16 08:27:36,458  * Debugger is active!
+2026-08-16 08:27:36,461  * Debugger PIN: 465-741-666
+2026-08-16 08:28:11,810  * Detected change in '/workspaces/leo-dev/main.py', reloading
+2026-08-16 08:28:11,850  * Restarting with stat
+2026-08-16 08:28:12,312  * Debugger is active!
+2026-08-16 08:28:12,317  * Debugger PIN: 465-741-666
+2026-08-16 08:28:13,801 127.0.0.1 - - [16/Aug/2026 08:28:13] "GET /about.html HTTP/1.1" 200 -
+2026-08-16 08:28:13,873 127.0.0.1 - - [16/Aug/2026 08:28:13] "[36mGET /static/js/bootstrap.bundle.min.js HTTP/1.1[0m" 304 -
+2026-08-16 08:28:13,874 127.0.0.1 - - [16/Aug/2026 08:28:13] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2026-08-16 08:28:13,889 127.0.0.1 - - [16/Aug/2026 08:28:13] "[36mGET /static/css/bootstrap.min.css HTTP/1.1[0m" 304 -
+2026-08-16 08:28:13,933 127.0.0.1 - - [16/Aug/2026 08:28:13] "[36mGET /static/js/serviceWorker.js HTTP/1.1[0m" 304 -
+2026-08-16 08:28:13,983 127.0.0.1 - - [16/Aug/2026 08:28:13] "[36mGET /static/js/app.js HTTP/1.1[0m" 304 -
+2026-08-16 08:28:14,036 127.0.0.1 - - [16/Aug/2026 08:28:14] "[36mGET /static/images/favicon.png HTTP/1.1[0m" 304 -
+2026-08-16 08:28:15,915 127.0.0.1 - - [16/Aug/2026 08:28:15] "GET /about.html HTTP/1.1" 200 -
+2026-08-16 08:28:15,984 127.0.0.1 - - [16/Aug/2026 08:28:15] "[36mGET /static/css/bootstrap.min.css HTTP/1.1[0m" 304 -
+2026-08-16 08:28:15,985 127.0.0.1 - - [16/Aug/2026 08:28:15] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2026-08-16 08:28:15,989 127.0.0.1 - - [16/Aug/2026 08:28:15] "[36mGET /static/js/bootstrap.bundle.min.js HTTP/1.1[0m" 304 -
+2026-08-16 08:28:16,035 127.0.0.1 - - [16/Aug/2026 08:28:16] "[36mGET /static/js/serviceWorker.js HTTP/1.1[0m" 304 -
+2026-08-16 08:28:16,080 127.0.0.1 - - [16/Aug/2026 08:28:16] "[36mGET /static/js/app.js HTTP/1.1[0m" 304 -
+2026-08-16 08:28:21,048 127.0.0.1 - - [16/Aug/2026 08:28:21] "GET /about.html HTTP/1.1" 200 -
+2026-08-16 08:28:21,118 127.0.0.1 - - [16/Aug/2026 08:28:21] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2026-08-16 08:28:21,121 127.0.0.1 - - [16/Aug/2026 08:28:21] "[36mGET /static/css/bootstrap.min.css HTTP/1.1[0m" 304 -
+2026-08-16 08:28:21,124 127.0.0.1 - - [16/Aug/2026 08:28:21] "[36mGET /static/js/bootstrap.bundle.min.js HTTP/1.1[0m" 304 -
+2026-08-16 08:28:21,166 127.0.0.1 - - [16/Aug/2026 08:28:21] "[36mGET /static/js/serviceWorker.js HTTP/1.1[0m" 304 -
+2026-08-16 08:28:21,248 127.0.0.1 - - [16/Aug/2026 08:28:21] "[36mGET /static/js/app.js HTTP/1.1[0m" 304 -
+2026-08-16 08:28:21,741 127.0.0.1 - - [16/Aug/2026 08:28:21] "GET /contact.html HTTP/1.1" 200 -
+2026-08-16 08:28:21,813 127.0.0.1 - - [16/Aug/2026 08:28:21] "[36mGET /static/js/bootstrap.bundle.min.js HTTP/1.1[0m" 304 -
+2026-08-16 08:28:21,813 127.0.0.1 - - [16/Aug/2026 08:28:21] "[36mGET /static/css/bootstrap.min.css HTTP/1.1[0m" 304 -
+2026-08-16 08:28:21,815 127.0.0.1 - - [16/Aug/2026 08:28:21] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2026-08-16 08:28:21,855 127.0.0.1 - - [16/Aug/2026 08:28:21] "[36mGET /static/js/serviceWorker.js HTTP/1.1[0m" 304 -
+2026-08-16 08:28:21,888 127.0.0.1 - - [16/Aug/2026 08:28:21] "[36mGET /static/js/app.js HTTP/1.1[0m" 304 -
+2026-08-16 08:28:29,176 127.0.0.1 - - [16/Aug/2026 08:28:29] "GET /portfolio.html HTTP/1.1" 200 -
+2026-08-16 08:28:29,228 127.0.0.1 - - [16/Aug/2026 08:28:29] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2026-08-16 08:28:29,240 127.0.0.1 - - [16/Aug/2026 08:28:29] "[36mGET /static/css/bootstrap.min.css HTTP/1.1[0m" 304 -
+2026-08-16 08:28:29,251 127.0.0.1 - - [16/Aug/2026 08:28:29] "[36mGET /static/js/bootstrap.bundle.min.js HTTP/1.1[0m" 304 -
+2026-08-16 08:28:29,289 127.0.0.1 - - [16/Aug/2026 08:28:29] "[36mGET /static/js/serviceWorker.js HTTP/1.1[0m" 304 -
+2026-08-16 08:28:29,328 127.0.0.1 - - [16/Aug/2026 08:28:29] "[36mGET /static/js/app.js HTTP/1.1[0m" 304 -
+2026-08-16 08:28:32,346 127.0.0.1 - - [16/Aug/2026 08:28:32] "GET /contact.html HTTP/1.1" 200 -
+2026-08-16 08:28:32,403 127.0.0.1 - - [16/Aug/2026 08:28:32] "[36mGET /static/css/bootstrap.min.css HTTP/1.1[0m" 304 -
+2026-08-16 08:28:32,418 127.0.0.1 - - [16/Aug/2026 08:28:32] "[36mGET /static/js/bootstrap.bundle.min.js HTTP/1.1[0m" 304 -
+2026-08-16 08:28:32,418 127.0.0.1 - - [16/Aug/2026 08:28:32] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2026-08-16 08:28:32,465 127.0.0.1 - - [16/Aug/2026 08:28:32] "[36mGET /static/js/serviceWorker.js HTTP/1.1[0m" 304 -
+2026-08-16 08:28:32,499 127.0.0.1 - - [16/Aug/2026 08:28:32] "[36mGET /static/js/app.js HTTP/1.1[0m" 304 -
+2026-08-16 08:31:23,979 127.0.0.1 - - [16/Aug/2026 08:31:23] "GET /contact.html HTTP/1.1" 200 -
+2026-08-16 08:31:24,239 127.0.0.1 - - [16/Aug/2026 08:31:24] "[36mGET /static/js/bootstrap.bundle.min.js HTTP/1.1[0m" 304 -
+2026-08-16 08:31:24,256 127.0.0.1 - - [16/Aug/2026 08:31:24] "[36mGET /static/css/bootstrap.min.css HTTP/1.1[0m" 304 -
+2026-08-16 08:31:24,273 127.0.0.1 - - [16/Aug/2026 08:31:24] "GET /static/css/style.css HTTP/1.1" 200 -
+2026-08-16 08:31:24,334 127.0.0.1 - - [16/Aug/2026 08:31:24] "[36mGET /static/js/serviceWorker.js HTTP/1.1[0m" 304 -
+2026-08-16 08:31:24,396 127.0.0.1 - - [16/Aug/2026 08:31:24] "[36mGET /static/js/app.js HTTP/1.1[0m" 304 -
+2026-08-16 08:31:24,518 127.0.0.1 - - [16/Aug/2026 08:31:24] "[36mGET /static/images/favicon.png HTTP/1.1[0m" 304 -
+2026-08-16 08:31:29,086 127.0.0.1 - - [16/Aug/2026 08:31:29] "GET /portfolio.html HTTP/1.1" 200 -
+2026-08-16 08:31:29,164 127.0.0.1 - - [16/Aug/2026 08:31:29] "[36mGET /static/css/bootstrap.min.css HTTP/1.1[0m" 304 -
+2026-08-16 08:31:29,271 127.0.0.1 - - [16/Aug/2026 08:31:29] "[36mGET /static/js/bootstrap.bundle.min.js HTTP/1.1[0m" 304 -
+2026-08-16 08:31:29,274 127.0.0.1 - - [16/Aug/2026 08:31:29] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2026-08-16 08:31:29,372 127.0.0.1 - - [16/Aug/2026 08:31:29] "[36mGET /static/js/serviceWorker.js HTTP/1.1[0m" 304 -
+2026-08-16 08:31:29,425 127.0.0.1 - - [16/Aug/2026 08:31:29] "[36mGET /static/js/app.js HTTP/1.1[0m" 304 -
+2026-08-16 08:31:33,312 127.0.0.1 - - [16/Aug/2026 08:31:33] "GET /contact.html HTTP/1.1" 200 -
+2026-08-16 08:31:33,385 127.0.0.1 - - [16/Aug/2026 08:31:33] "[36mGET /static/css/bootstrap.min.css HTTP/1.1[0m" 304 -
+2026-08-16 08:31:33,385 127.0.0.1 - - [16/Aug/2026 08:31:33] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2026-08-16 08:31:33,388 127.0.0.1 - - [16/Aug/2026 08:31:33] "[36mGET /static/js/bootstrap.bundle.min.js HTTP/1.1[0m" 304 -
+2026-08-16 08:31:33,436 127.0.0.1 - - [16/Aug/2026 08:31:33] "[36mGET /static/js/serviceWorker.js HTTP/1.1[0m" 304 -
+2026-08-16 08:31:33,490 127.0.0.1 - - [16/Aug/2026 08:31:33] "[36mGET /static/js/app.js HTTP/1.1[0m" 304 -
+2026-08-16 08:41:47,945 127.0.0.1 - - [16/Aug/2026 08:41:47] "GET /about.html HTTP/1.1" 200 -
+2026-08-16 08:41:48,038 127.0.0.1 - - [16/Aug/2026 08:41:48] "[36mGET /static/css/bootstrap.min.css HTTP/1.1[0m" 304 -
+2026-08-16 08:41:48,139 127.0.0.1 - - [16/Aug/2026 08:41:48] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2026-08-16 08:41:48,148 127.0.0.1 - - [16/Aug/2026 08:41:48] "[36mGET /static/js/bootstrap.bundle.min.js HTTP/1.1[0m" 304 -
+2026-08-16 08:41:48,221 127.0.0.1 - - [16/Aug/2026 08:41:48] "[36mGET /static/js/serviceWorker.js HTTP/1.1[0m" 304 -
+2026-08-16 08:41:48,291 127.0.0.1 - - [16/Aug/2026 08:41:48] "[36mGET /static/js/app.js HTTP/1.1[0m" 304 -
+2026-08-16 08:42:37,864 127.0.0.1 - - [16/Aug/2026 08:42:37] "GET /contact.html HTTP/1.1" 200 -
+2026-08-16 08:42:37,952 127.0.0.1 - - [16/Aug/2026 08:42:37] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2026-08-16 08:42:37,958 127.0.0.1 - - [16/Aug/2026 08:42:37] "[36mGET /static/js/bootstrap.bundle.min.js HTTP/1.1[0m" 304 -
+2026-08-16 08:42:38,016 127.0.0.1 - - [16/Aug/2026 08:42:38] "[36mGET /static/css/bootstrap.min.css HTTP/1.1[0m" 304 -
+2026-08-16 08:42:38,153 127.0.0.1 - - [16/Aug/2026 08:42:38] "[36mGET /static/js/serviceWorker.js HTTP/1.1[0m" 304 -
+2026-08-16 08:42:38,202 127.0.0.1 - - [16/Aug/2026 08:42:38] "[36mGET /static/js/app.js HTTP/1.1[0m" 304 -
+2026-08-16 08:42:39,028 127.0.0.1 - - [16/Aug/2026 08:42:39] "GET /portfolio.html HTTP/1.1" 200 -
+2026-08-16 08:42:39,102 127.0.0.1 - - [16/Aug/2026 08:42:39] "[36mGET /static/js/bootstrap.bundle.min.js HTTP/1.1[0m" 304 -
+2026-08-16 08:42:39,103 127.0.0.1 - - [16/Aug/2026 08:42:39] "[36mGET /static/css/bootstrap.min.css HTTP/1.1[0m" 304 -
+2026-08-16 08:42:39,105 127.0.0.1 - - [16/Aug/2026 08:42:39] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2026-08-16 08:42:39,148 127.0.0.1 - - [16/Aug/2026 08:42:39] "[36mGET /static/js/serviceWorker.js HTTP/1.1[0m" 304 -
+2026-08-16 08:42:39,187 127.0.0.1 - - [16/Aug/2026 08:42:39] "[36mGET /static/js/app.js HTTP/1.1[0m" 304 -
+2026-08-16 08:42:46,857 127.0.0.1 - - [16/Aug/2026 08:42:46] "GET /contact.html HTTP/1.1" 200 -
+2026-08-16 08:42:46,920 127.0.0.1 - - [16/Aug/2026 08:42:46] "[36mGET /static/css/bootstrap.min.css HTTP/1.1[0m" 304 -
+2026-08-16 08:42:46,933 127.0.0.1 - - [16/Aug/2026 08:42:46] "[36mGET /static/js/bootstrap.bundle.min.js HTTP/1.1[0m" 304 -
+2026-08-16 08:42:46,938 127.0.0.1 - - [16/Aug/2026 08:42:46] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2026-08-16 08:42:46,983 127.0.0.1 - - [16/Aug/2026 08:42:46] "[36mGET /static/js/serviceWorker.js HTTP/1.1[0m" 304 -
+2026-08-16 08:42:47,018 127.0.0.1 - - [16/Aug/2026 08:42:47] "[36mGET /static/js/app.js HTTP/1.1[0m" 304 -
+2026-08-16 08:45:42,437 127.0.0.1 - - [16/Aug/2026 08:45:42] "GET /contact.html HTTP/1.1" 200 -
+2026-08-16 08:45:42,613 127.0.0.1 - - [16/Aug/2026 08:45:42] "[36mGET /static/css/bootstrap.min.css HTTP/1.1[0m" 304 -
+2026-08-16 08:45:42,648 127.0.0.1 - - [16/Aug/2026 08:45:42] "[36mGET /static/js/bootstrap.bundle.min.js HTTP/1.1[0m" 304 -
+2026-08-16 08:45:42,657 127.0.0.1 - - [16/Aug/2026 08:45:42] "GET /static/css/style.css HTTP/1.1" 200 -
+2026-08-16 08:45:42,782 127.0.0.1 - - [16/Aug/2026 08:45:42] "[36mGET /static/js/serviceWorker.js HTTP/1.1[0m" 304 -
+2026-08-16 08:45:42,890 127.0.0.1 - - [16/Aug/2026 08:45:42] "[36mGET /static/js/app.js HTTP/1.1[0m" 304 -
+2026-08-16 08:45:42,940 127.0.0.1 - - [16/Aug/2026 08:45:42] "[36mGET /static/images/favicon.png HTTP/1.1[0m" 304 -
+2026-08-16 08:45:43,204 127.0.0.1 - - [16/Aug/2026 08:45:43] "GET / HTTP/1.1" 200 -
+2026-08-16 08:45:43,265 127.0.0.1 - - [16/Aug/2026 08:45:43] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2026-08-16 08:45:43,283 127.0.0.1 - - [16/Aug/2026 08:45:43] "[36mGET /static/css/bootstrap.min.css HTTP/1.1[0m" 304 -
+2026-08-16 08:45:43,287 127.0.0.1 - - [16/Aug/2026 08:45:43] "[36mGET /static/js/bootstrap.bundle.min.js HTTP/1.1[0m" 304 -
+2026-08-16 08:45:43,303 {"csp-report":{"document-uri":"https://obscure-cod-x66gvwxp957f6697-5000.app.github.dev/","referrer":"https://obscure-cod-x66gvwxp957f6697-5000.app.github.dev/contact.html","violated-directive":"manifest-src","effective-directive":"manifest-src","original-policy":"script-src 'self'; img-src 'self' data:; child-src 'self'; default-src 'self'; style-src 'self'; media-src 'self'; object-src 'self'; connect-src 'self'; base-uri 'self'; report-uri /csp_report; font-src 'self'; worker-src 'self'; frame-ancestors 'none'; form-action 'self'; frame-src 'none'","disposition":"enforce","blocked-uri":"https://obscure-cod-x66gvwxp957f6697-5000.app.github.dev/static/manifest.json","status-code":200,"script-sample":""}}
+2026-08-16 08:45:43,303 127.0.0.1 - - [16/Aug/2026 08:45:43] "POST /csp_report HTTP/1.1" 200 -
+2026-08-16 08:45:43,325 127.0.0.1 - - [16/Aug/2026 08:45:43] "[36mGET /static/js/serviceWorker.js HTTP/1.1[0m" 304 -
+2026-08-16 08:45:43,359 127.0.0.1 - - [16/Aug/2026 08:45:43] "[36mGET /static/js/app.js HTTP/1.1[0m" 304 -
+2026-08-16 08:45:47,149 127.0.0.1 - - [16/Aug/2026 08:45:47] "GET /contact.html HTTP/1.1" 200 -
+2026-08-16 08:45:47,221 127.0.0.1 - - [16/Aug/2026 08:45:47] "[36mGET /static/css/bootstrap.min.css HTTP/1.1[0m" 304 -
+2026-08-16 08:45:47,225 127.0.0.1 - - [16/Aug/2026 08:45:47] "[36mGET /static/js/bootstrap.bundle.min.js HTTP/1.1[0m" 304 -
+2026-08-16 08:45:47,227 127.0.0.1 - - [16/Aug/2026 08:45:47] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2026-08-16 08:45:47,270 127.0.0.1 - - [16/Aug/2026 08:45:47] "[36mGET /static/js/serviceWorker.js HTTP/1.1[0m" 304 -
+2026-08-16 08:45:47,305 127.0.0.1 - - [16/Aug/2026 08:45:47] "[36mGET /static/js/app.js HTTP/1.1[0m" 304 -
+2026-08-16 08:46:54,295 127.0.0.1 - - [16/Aug/2026 08:46:54] "GET /contact.html HTTP/1.1" 200 -
+2026-08-16 08:46:54,356 127.0.0.1 - - [16/Aug/2026 08:46:54] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2026-08-16 08:46:54,369 127.0.0.1 - - [16/Aug/2026 08:46:54] "[36mGET /static/css/bootstrap.min.css HTTP/1.1[0m" 304 -
+2026-08-16 08:46:54,373 127.0.0.1 - - [16/Aug/2026 08:46:54] "[36mGET /static/js/bootstrap.bundle.min.js HTTP/1.1[0m" 304 -
+2026-08-16 08:46:54,411 127.0.0.1 - - [16/Aug/2026 08:46:54] "[36mGET /static/js/serviceWorker.js HTTP/1.1[0m" 304 -
+2026-08-16 08:46:54,439 127.0.0.1 - - [16/Aug/2026 08:46:54] "[36mGET /static/js/app.js HTTP/1.1[0m" 304 -
+2026-08-16 08:46:54,490 127.0.0.1 - - [16/Aug/2026 08:46:54] "[36mGET /static/images/favicon.png HTTP/1.1[0m" 304 -
+2026-08-16 08:48:03,072 127.0.0.1 - - [16/Aug/2026 08:48:03] "GET /portfolio.html HTTP/1.1" 200 -
+2026-08-16 08:48:03,294 127.0.0.1 - - [16/Aug/2026 08:48:03] "[36mGET /static/js/bootstrap.bundle.min.js HTTP/1.1[0m" 304 -
+2026-08-16 08:48:03,302 127.0.0.1 - - [16/Aug/2026 08:48:03] "[36mGET /static/css/bootstrap.min.css HTTP/1.1[0m" 304 -
+2026-08-16 08:48:03,312 127.0.0.1 - - [16/Aug/2026 08:48:03] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2026-08-16 08:48:03,450 127.0.0.1 - - [16/Aug/2026 08:48:03] "[36mGET /static/js/serviceWorker.js HTTP/1.1[0m" 304 -
+2026-08-16 08:48:03,507 127.0.0.1 - - [16/Aug/2026 08:48:03] "[36mGET /static/js/app.js HTTP/1.1[0m" 304 -
+2026-08-16 08:48:06,061 127.0.0.1 - - [16/Aug/2026 08:48:06] "GET /about.html HTTP/1.1" 200 -
+2026-08-16 08:48:06,113 127.0.0.1 - - [16/Aug/2026 08:48:06] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2026-08-16 08:48:06,130 127.0.0.1 - - [16/Aug/2026 08:48:06] "[36mGET /static/js/bootstrap.bundle.min.js HTTP/1.1[0m" 304 -
+2026-08-16 08:48:06,132 127.0.0.1 - - [16/Aug/2026 08:48:06] "[36mGET /static/css/bootstrap.min.css HTTP/1.1[0m" 304 -
+2026-08-16 08:48:06,180 127.0.0.1 - - [16/Aug/2026 08:48:06] "[36mGET /static/js/serviceWorker.js HTTP/1.1[0m" 304 -
+2026-08-16 08:48:06,221 127.0.0.1 - - [16/Aug/2026 08:48:06] "[36mGET /static/js/app.js HTTP/1.1[0m" 304 -
+2026-08-16 08:48:09,105 127.0.0.1 - - [16/Aug/2026 08:48:09] "GET /contact.html HTTP/1.1" 200 -
+2026-08-16 08:48:09,164 127.0.0.1 - - [16/Aug/2026 08:48:09] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2026-08-16 08:48:09,176 127.0.0.1 - - [16/Aug/2026 08:48:09] "[36mGET /static/js/bootstrap.bundle.min.js HTTP/1.1[0m" 304 -
+2026-08-16 08:48:09,177 127.0.0.1 - - [16/Aug/2026 08:48:09] "[36mGET /static/css/bootstrap.min.css HTTP/1.1[0m" 304 -
+2026-08-16 08:48:09,221 127.0.0.1 - - [16/Aug/2026 08:48:09] "[36mGET /static/js/serviceWorker.js HTTP/1.1[0m" 304 -
+2026-08-16 08:48:09,334 127.0.0.1 - - [16/Aug/2026 08:48:09] "[36mGET /static/js/app.js HTTP/1.1[0m" 304 -
+2026-08-16 08:48:10,196 127.0.0.1 - - [16/Aug/2026 08:48:10] "GET /about.html HTTP/1.1" 200 -
+2026-08-16 08:48:10,256 127.0.0.1 - - [16/Aug/2026 08:48:10] "[36mGET /static/js/bootstrap.bundle.min.js HTTP/1.1[0m" 304 -
+2026-08-16 08:48:10,270 127.0.0.1 - - [16/Aug/2026 08:48:10] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2026-08-16 08:48:10,274 127.0.0.1 - - [16/Aug/2026 08:48:10] "[36mGET /static/css/bootstrap.min.css HTTP/1.1[0m" 304 -
+2026-08-16 08:48:10,326 127.0.0.1 - - [16/Aug/2026 08:48:10] "[36mGET /static/js/serviceWorker.js HTTP/1.1[0m" 304 -
+2026-08-16 08:48:10,364 127.0.0.1 - - [16/Aug/2026 08:48:10] "[36mGET /static/js/app.js HTTP/1.1[0m" 304 -
+2026-08-16 08:48:11,535 127.0.0.1 - - [16/Aug/2026 08:48:11] "GET / HTTP/1.1" 200 -
+2026-08-16 08:48:11,598 127.0.0.1 - - [16/Aug/2026 08:48:11] "[36mGET /static/css/bootstrap.min.css HTTP/1.1[0m" 304 -
+2026-08-16 08:48:11,601 127.0.0.1 - - [16/Aug/2026 08:48:11] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2026-08-16 08:48:11,603 127.0.0.1 - - [16/Aug/2026 08:48:11] "[36mGET /static/js/bootstrap.bundle.min.js HTTP/1.1[0m" 304 -
+2026-08-16 08:48:11,630 {"csp-report":{"document-uri":"https://obscure-cod-x66gvwxp957f6697-5000.app.github.dev/","referrer":"https://obscure-cod-x66gvwxp957f6697-5000.app.github.dev/about.html","violated-directive":"manifest-src","effective-directive":"manifest-src","original-policy":"script-src 'self'; img-src 'self' data:; child-src 'self'; default-src 'self'; style-src 'self'; media-src 'self'; object-src 'self'; connect-src 'self'; base-uri 'self'; report-uri /csp_report; font-src 'self'; worker-src 'self'; frame-ancestors 'none'; form-action 'self'; frame-src 'none'","disposition":"enforce","blocked-uri":"https://obscure-cod-x66gvwxp957f6697-5000.app.github.dev/static/manifest.json","status-code":200,"script-sample":""}}
+2026-08-16 08:48:11,630 127.0.0.1 - - [16/Aug/2026 08:48:11] "POST /csp_report HTTP/1.1" 200 -
+2026-08-16 08:48:11,650 127.0.0.1 - - [16/Aug/2026 08:48:11] "[36mGET /static/js/serviceWorker.js HTTP/1.1[0m" 304 -
+2026-08-16 08:48:11,686 127.0.0.1 - - [16/Aug/2026 08:48:11] "[36mGET /static/js/app.js HTTP/1.1[0m" 304 -
+2026-08-16 08:48:12,902 127.0.0.1 - - [16/Aug/2026 08:48:12] "GET /contact.html HTTP/1.1" 200 -
+2026-08-16 08:48:12,984 127.0.0.1 - - [16/Aug/2026 08:48:12] "[36mGET /static/js/bootstrap.bundle.min.js HTTP/1.1[0m" 304 -
+2026-08-16 08:48:12,985 127.0.0.1 - - [16/Aug/2026 08:48:12] "[36mGET /static/css/bootstrap.min.css HTTP/1.1[0m" 304 -
+2026-08-16 08:48:12,987 127.0.0.1 - - [16/Aug/2026 08:48:12] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2026-08-16 08:48:13,045 127.0.0.1 - - [16/Aug/2026 08:48:13] "[36mGET /static/js/serviceWorker.js HTTP/1.1[0m" 304 -
+2026-08-16 08:48:13,082 127.0.0.1 - - [16/Aug/2026 08:48:13] "[36mGET /static/js/app.js HTTP/1.1[0m" 304 -
+2026-08-16 08:50:29,524 127.0.0.1 - - [16/Aug/2026 08:50:29] "GET /contact.html HTTP/1.1" 200 -
+2026-08-16 08:50:29,765 127.0.0.1 - - [16/Aug/2026 08:50:29] "[36mGET /static/js/bootstrap.bundle.min.js HTTP/1.1[0m" 304 -
+2026-08-16 08:50:29,765 127.0.0.1 - - [16/Aug/2026 08:50:29] "[36mGET /static/css/bootstrap.min.css HTTP/1.1[0m" 304 -
+2026-08-16 08:50:29,772 127.0.0.1 - - [16/Aug/2026 08:50:29] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2026-08-16 08:50:29,878 127.0.0.1 - - [16/Aug/2026 08:50:29] "[36mGET /static/js/serviceWorker.js HTTP/1.1[0m" 304 -
+2026-08-16 08:50:29,983 127.0.0.1 - - [16/Aug/2026 08:50:29] "[36mGET /static/js/app.js HTTP/1.1[0m" 304 -
+2026-08-16 08:50:30,030 127.0.0.1 - - [16/Aug/2026 08:50:30] "[36mGET /static/images/favicon.png HTTP/1.1[0m" 304 -
+2026-08-16 08:51:55,328 127.0.0.1 - - [16/Aug/2026 08:51:55] "GET /contact.html HTTP/1.1" 200 -
+2026-08-16 08:51:55,405 127.0.0.1 - - [16/Aug/2026 08:51:55] "[33mGET /static/css/bootstrap-icons.css HTTP/1.1[0m" 404 -
+2026-08-16 08:51:55,410 127.0.0.1 - - [16/Aug/2026 08:51:55] "[36mGET /static/js/bootstrap.bundle.min.js HTTP/1.1[0m" 304 -
+2026-08-16 08:51:55,412 127.0.0.1 - - [16/Aug/2026 08:51:55] "[36mGET /static/css/bootstrap.min.css HTTP/1.1[0m" 304 -
+2026-08-16 08:51:55,416 127.0.0.1 - - [16/Aug/2026 08:51:55] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2026-08-16 08:51:55,473 127.0.0.1 - - [16/Aug/2026 08:51:55] "[36mGET /static/js/serviceWorker.js HTTP/1.1[0m" 304 -
+2026-08-16 08:51:55,506 127.0.0.1 - - [16/Aug/2026 08:51:55] "[36mGET /static/js/app.js HTTP/1.1[0m" 304 -
+2026-08-16 08:51:55,552 127.0.0.1 - - [16/Aug/2026 08:51:55] "[36mGET /static/images/favicon.png HTTP/1.1[0m" 304 -
+2026-08-16 08:52:00,452 127.0.0.1 - - [16/Aug/2026 08:52:00] "GET / HTTP/1.1" 200 -
+2026-08-16 08:52:00,521 127.0.0.1 - - [16/Aug/2026 08:52:00] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2026-08-16 08:52:00,526 127.0.0.1 - - [16/Aug/2026 08:52:00] "[33mGET /static/css/bootstrap-icons.css HTTP/1.1[0m" 404 -
+2026-08-16 08:52:00,528 127.0.0.1 - - [16/Aug/2026 08:52:00] "[36mGET /static/css/bootstrap.min.css HTTP/1.1[0m" 304 -
+2026-08-16 08:52:00,530 127.0.0.1 - - [16/Aug/2026 08:52:00] "[36mGET /static/js/bootstrap.bundle.min.js HTTP/1.1[0m" 304 -
+2026-08-16 08:52:00,554 {"csp-report":{"document-uri":"https://obscure-cod-x66gvwxp957f6697-5000.app.github.dev/","referrer":"https://obscure-cod-x66gvwxp957f6697-5000.app.github.dev/contact.html","violated-directive":"manifest-src","effective-directive":"manifest-src","original-policy":"script-src 'self'; img-src 'self' data:; child-src 'self'; default-src 'self'; style-src 'self'; media-src 'self'; object-src 'self'; connect-src 'self'; base-uri 'self'; report-uri /csp_report; font-src 'self'; worker-src 'self'; frame-ancestors 'none'; form-action 'self'; frame-src 'none'","disposition":"enforce","blocked-uri":"https://obscure-cod-x66gvwxp957f6697-5000.app.github.dev/static/manifest.json","status-code":200,"script-sample":""}}
+2026-08-16 08:52:00,554 127.0.0.1 - - [16/Aug/2026 08:52:00] "POST /csp_report HTTP/1.1" 200 -
+2026-08-16 08:52:00,575 127.0.0.1 - - [16/Aug/2026 08:52:00] "[36mGET /static/js/serviceWorker.js HTTP/1.1[0m" 304 -
+2026-08-16 08:52:00,656 127.0.0.1 - - [16/Aug/2026 08:52:00] "[36mGET /static/js/app.js HTTP/1.1[0m" 304 -
+2026-08-16 08:52:03,711 127.0.0.1 - - [16/Aug/2026 08:52:03] "GET /contact.html HTTP/1.1" 200 -
+2026-08-16 08:52:03,769 127.0.0.1 - - [16/Aug/2026 08:52:03] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2026-08-16 08:52:03,782 127.0.0.1 - - [16/Aug/2026 08:52:03] "[36mGET /static/js/bootstrap.bundle.min.js HTTP/1.1[0m" 304 -
+2026-08-16 08:52:03,785 127.0.0.1 - - [16/Aug/2026 08:52:03] "[36mGET /static/css/bootstrap.min.css HTTP/1.1[0m" 304 -
+2026-08-16 08:52:03,791 127.0.0.1 - - [16/Aug/2026 08:52:03] "[33mGET /static/css/bootstrap-icons.css HTTP/1.1[0m" 404 -
+2026-08-16 08:52:03,833 127.0.0.1 - - [16/Aug/2026 08:52:03] "[36mGET /static/js/serviceWorker.js HTTP/1.1[0m" 304 -
+2026-08-16 08:52:03,863 127.0.0.1 - - [16/Aug/2026 08:52:03] "[36mGET /static/js/app.js HTTP/1.1[0m" 304 -
+2026-08-16 08:53:06,662 127.0.0.1 - - [16/Aug/2026 08:53:06] "GET /contact.html HTTP/1.1" 200 -
+2026-08-16 08:53:06,754 127.0.0.1 - - [16/Aug/2026 08:53:06] "[36mGET /static/js/bootstrap.bundle.min.js HTTP/1.1[0m" 304 -
+2026-08-16 08:53:06,758 127.0.0.1 - - [16/Aug/2026 08:53:06] "GET /static/css/style.css HTTP/1.1" 200 -
+2026-08-16 08:53:06,761 127.0.0.1 - - [16/Aug/2026 08:53:06] "[36mGET /static/css/bootstrap.min.css HTTP/1.1[0m" 304 -
+2026-08-16 08:53:06,878 127.0.0.1 - - [16/Aug/2026 08:53:06] "[36mGET /static/js/serviceWorker.js HTTP/1.1[0m" 304 -
+2026-08-16 08:53:06,923 127.0.0.1 - - [16/Aug/2026 08:53:06] "[36mGET /static/js/app.js HTTP/1.1[0m" 304 -
+2026-08-16 08:53:06,969 127.0.0.1 - - [16/Aug/2026 08:53:06] "[36mGET /static/images/favicon.png HTTP/1.1[0m" 304 -
+2026-08-16 08:54:06,138 127.0.0.1 - - [16/Aug/2026 08:54:06] "GET /contact.html HTTP/1.1" 200 -
+2026-08-16 08:54:06,193 127.0.0.1 - - [16/Aug/2026 08:54:06] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2026-08-16 08:54:06,206 127.0.0.1 - - [16/Aug/2026 08:54:06] "[36mGET /static/css/bootstrap.min.css HTTP/1.1[0m" 304 -
+2026-08-16 08:54:06,209 127.0.0.1 - - [16/Aug/2026 08:54:06] "[36mGET /static/js/bootstrap.bundle.min.js HTTP/1.1[0m" 304 -
+2026-08-16 08:54:06,253 127.0.0.1 - - [16/Aug/2026 08:54:06] "[36mGET /static/js/serviceWorker.js HTTP/1.1[0m" 304 -
+2026-08-16 08:54:06,292 127.0.0.1 - - [16/Aug/2026 08:54:06] "[36mGET /static/js/app.js HTTP/1.1[0m" 304 -
+2026-08-16 08:54:06,338 127.0.0.1 - - [16/Aug/2026 08:54:06] "[36mGET /static/images/favicon.png HTTP/1.1[0m" 304 -
+2026-08-16 08:55:10,592 127.0.0.1 - - [16/Aug/2026 08:55:10] "GET /contact.html HTTP/1.1" 200 -
+2026-08-16 08:55:10,661 127.0.0.1 - - [16/Aug/2026 08:55:10] "GET /static/css/style.css HTTP/1.1" 200 -
+2026-08-16 08:55:10,674 127.0.0.1 - - [16/Aug/2026 08:55:10] "[36mGET /static/css/bootstrap.min.css HTTP/1.1[0m" 304 -
+2026-08-16 08:55:10,678 127.0.0.1 - - [16/Aug/2026 08:55:10] "[36mGET /static/js/bootstrap.bundle.min.js HTTP/1.1[0m" 304 -
+2026-08-16 08:55:10,718 127.0.0.1 - - [16/Aug/2026 08:55:10] "[36mGET /static/js/serviceWorker.js HTTP/1.1[0m" 304 -
+2026-08-16 08:55:10,763 127.0.0.1 - - [16/Aug/2026 08:55:10] "[36mGET /static/js/app.js HTTP/1.1[0m" 304 -
+2026-08-16 08:55:10,814 127.0.0.1 - - [16/Aug/2026 08:55:10] "[36mGET /static/images/favicon.png HTTP/1.1[0m" 304 -
+2026-08-16 08:55:20,027 127.0.0.1 - - [16/Aug/2026 08:55:20] "GET /contact.html HTTP/1.1" 200 -
+2026-08-16 08:55:20,091 127.0.0.1 - - [16/Aug/2026 08:55:20] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2026-08-16 08:55:20,096 127.0.0.1 - - [16/Aug/2026 08:55:20] "[36mGET /static/css/bootstrap.min.css HTTP/1.1[0m" 304 -
+2026-08-16 08:55:20,102 127.0.0.1 - - [16/Aug/2026 08:55:20] "[36mGET /static/js/bootstrap.bundle.min.js HTTP/1.1[0m" 304 -
+2026-08-16 08:55:20,145 127.0.0.1 - - [16/Aug/2026 08:55:20] "[36mGET /static/js/serviceWorker.js HTTP/1.1[0m" 304 -
+2026-08-16 08:55:20,178 127.0.0.1 - - [16/Aug/2026 08:55:20] "[36mGET /static/js/app.js HTTP/1.1[0m" 304 -
+2026-08-16 08:55:20,227 127.0.0.1 - - [16/Aug/2026 08:55:20] "[36mGET /static/images/favicon.png HTTP/1.1[0m" 304 -
+2026-08-16 08:55:41,215 127.0.0.1 - - [16/Aug/2026 08:55:41] "GET /portfolio.html HTTP/1.1" 200 -
+2026-08-16 08:55:41,276 127.0.0.1 - - [16/Aug/2026 08:55:41] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2026-08-16 08:55:41,282 127.0.0.1 - - [16/Aug/2026 08:55:41] "[36mGET /static/js/bootstrap.bundle.min.js HTTP/1.1[0m" 304 -
+2026-08-16 08:55:41,283 127.0.0.1 - - [16/Aug/2026 08:55:41] "[36mGET /static/css/bootstrap.min.css HTTP/1.1[0m" 304 -
+2026-08-16 08:55:41,329 127.0.0.1 - - [16/Aug/2026 08:55:41] "[36mGET /static/js/serviceWorker.js HTTP/1.1[0m" 304 -
+2026-08-16 08:55:41,367 127.0.0.1 - - [16/Aug/2026 08:55:41] "[36mGET /static/js/app.js HTTP/1.1[0m" 304 -
+2026-08-16 08:55:43,764 127.0.0.1 - - [16/Aug/2026 08:55:43] "GET /about.html HTTP/1.1" 200 -
+2026-08-16 08:55:43,823 127.0.0.1 - - [16/Aug/2026 08:55:43] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2026-08-16 08:55:43,826 127.0.0.1 - - [16/Aug/2026 08:55:43] "[36mGET /static/js/bootstrap.bundle.min.js HTTP/1.1[0m" 304 -
+2026-08-16 08:55:43,829 127.0.0.1 - - [16/Aug/2026 08:55:43] "[36mGET /static/css/bootstrap.min.css HTTP/1.1[0m" 304 -
+2026-08-16 08:55:43,876 127.0.0.1 - - [16/Aug/2026 08:55:43] "[36mGET /static/js/serviceWorker.js HTTP/1.1[0m" 304 -
+2026-08-16 08:55:43,968 127.0.0.1 - - [16/Aug/2026 08:55:43] "[36mGET /static/js/app.js HTTP/1.1[0m" 304 -
+2026-08-16 08:55:45,520 127.0.0.1 - - [16/Aug/2026 08:55:45] "GET / HTTP/1.1" 200 -
+2026-08-16 08:55:45,568 127.0.0.1 - - [16/Aug/2026 08:55:45] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2026-08-16 08:55:45,580 127.0.0.1 - - [16/Aug/2026 08:55:45] "[36mGET /static/js/bootstrap.bundle.min.js HTTP/1.1[0m" 304 -
+2026-08-16 08:55:45,583 127.0.0.1 - - [16/Aug/2026 08:55:45] "[36mGET /static/css/bootstrap.min.css HTTP/1.1[0m" 304 -
+2026-08-16 08:55:45,600 {"csp-report":{"document-uri":"https://obscure-cod-x66gvwxp957f6697-5000.app.github.dev/","referrer":"https://obscure-cod-x66gvwxp957f6697-5000.app.github.dev/about.html","violated-directive":"manifest-src","effective-directive":"manifest-src","original-policy":"script-src 'self'; img-src 'self' data:; child-src 'self'; default-src 'self'; style-src 'self'; media-src 'self'; object-src 'self'; connect-src 'self'; base-uri 'self'; report-uri /csp_report; font-src 'self'; worker-src 'self'; frame-ancestors 'none'; form-action 'self'; frame-src 'none'","disposition":"enforce","blocked-uri":"https://obscure-cod-x66gvwxp957f6697-5000.app.github.dev/static/manifest.json","status-code":200,"script-sample":""}}
+2026-08-16 08:55:45,600 127.0.0.1 - - [16/Aug/2026 08:55:45] "POST /csp_report HTTP/1.1" 200 -
+2026-08-16 08:55:45,628 127.0.0.1 - - [16/Aug/2026 08:55:45] "[36mGET /static/js/serviceWorker.js HTTP/1.1[0m" 304 -
+2026-08-16 08:55:45,667 127.0.0.1 - - [16/Aug/2026 08:55:45] "[36mGET /static/js/app.js HTTP/1.1[0m" 304 -
+2026-08-16 08:57:03,448 127.0.0.1 - - [16/Aug/2026 08:57:03] "GET / HTTP/1.1" 200 -
+2026-08-16 08:57:03,684 127.0.0.1 - - [16/Aug/2026 08:57:03] "[36mGET /static/css/bootstrap.min.css HTTP/1.1[0m" 304 -
+2026-08-16 08:57:03,693 127.0.0.1 - - [16/Aug/2026 08:57:03] "GET /static/css/style.css HTTP/1.1" 200 -
+2026-08-16 08:57:03,705 127.0.0.1 - - [16/Aug/2026 08:57:03] "[36mGET /static/js/bootstrap.bundle.min.js HTTP/1.1[0m" 304 -
+2026-08-16 08:57:03,752 {"csp-report":{"document-uri":"https://obscure-cod-x66gvwxp957f6697-5000.app.github.dev/","referrer":"https://obscure-cod-x66gvwxp957f6697-5000.app.github.dev/about.html","violated-directive":"manifest-src","effective-directive":"manifest-src","original-policy":"script-src 'self'; img-src 'self' data:; child-src 'self'; default-src 'self'; style-src 'self'; media-src 'self'; object-src 'self'; connect-src 'self'; base-uri 'self'; report-uri /csp_report; font-src 'self'; worker-src 'self'; frame-ancestors 'none'; form-action 'self'; frame-src 'none'","disposition":"enforce","blocked-uri":"https://obscure-cod-x66gvwxp957f6697-5000.app.github.dev/static/manifest.json","status-code":200,"script-sample":""}}
+2026-08-16 08:57:03,752 127.0.0.1 - - [16/Aug/2026 08:57:03] "POST /csp_report HTTP/1.1" 200 -
+2026-08-16 08:57:03,832 127.0.0.1 - - [16/Aug/2026 08:57:03] "[36mGET /static/js/serviceWorker.js HTTP/1.1[0m" 304 -
+2026-08-16 08:57:03,870 127.0.0.1 - - [16/Aug/2026 08:57:03] "GET /static/js/app.js HTTP/1.1" 200 -
+2026-08-16 08:57:04,021 127.0.0.1 - - [16/Aug/2026 08:57:04] "[36mGET /static/images/favicon.png HTTP/1.1[0m" 304 -
+2026-08-16 08:57:06,697 127.0.0.1 - - [16/Aug/2026 08:57:06] "GET / HTTP/1.1" 200 -
+2026-08-16 08:57:06,755 127.0.0.1 - - [16/Aug/2026 08:57:06] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2026-08-16 08:57:06,762 127.0.0.1 - - [16/Aug/2026 08:57:06] "[36mGET /static/js/bootstrap.bundle.min.js HTTP/1.1[0m" 304 -
+2026-08-16 08:57:06,778 127.0.0.1 - - [16/Aug/2026 08:57:06] "[36mGET /static/css/bootstrap.min.css HTTP/1.1[0m" 304 -
+2026-08-16 08:57:06,811 {"csp-report":{"document-uri":"https://obscure-cod-x66gvwxp957f6697-5000.app.github.dev/","referrer":"https://obscure-cod-x66gvwxp957f6697-5000.app.github.dev/about.html","violated-directive":"manifest-src","effective-directive":"manifest-src","original-policy":"script-src 'self'; img-src 'self' data:; child-src 'self'; default-src 'self'; style-src 'self'; media-src 'self'; object-src 'self'; connect-src 'self'; base-uri 'self'; report-uri /csp_report; font-src 'self'; worker-src 'self'; frame-ancestors 'none'; form-action 'self'; frame-src 'none'","disposition":"enforce","blocked-uri":"https://obscure-cod-x66gvwxp957f6697-5000.app.github.dev/static/manifest.json","status-code":200,"script-sample":""}}
+2026-08-16 08:57:06,811 127.0.0.1 - - [16/Aug/2026 08:57:06] "POST /csp_report HTTP/1.1" 200 -
+2026-08-16 08:57:06,833 127.0.0.1 - - [16/Aug/2026 08:57:06] "[36mGET /static/js/serviceWorker.js HTTP/1.1[0m" 304 -
+2026-08-16 08:57:06,868 127.0.0.1 - - [16/Aug/2026 08:57:06] "[36mGET /static/js/app.js HTTP/1.1[0m" 304 -
+2026-08-16 08:57:06,926 127.0.0.1 - - [16/Aug/2026 08:57:06] "[36mGET /static/images/favicon.png HTTP/1.1[0m" 304 -
+2026-08-16 08:57:09,520 127.0.0.1 - - [16/Aug/2026 08:57:09] "GET /about.html HTTP/1.1" 200 -
+2026-08-16 08:57:09,584 127.0.0.1 - - [16/Aug/2026 08:57:09] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2026-08-16 08:57:09,585 127.0.0.1 - - [16/Aug/2026 08:57:09] "[36mGET /static/css/bootstrap.min.css HTTP/1.1[0m" 304 -
+2026-08-16 08:57:09,589 127.0.0.1 - - [16/Aug/2026 08:57:09] "[36mGET /static/js/bootstrap.bundle.min.js HTTP/1.1[0m" 304 -
+2026-08-16 08:57:09,637 127.0.0.1 - - [16/Aug/2026 08:57:09] "[36mGET /static/js/serviceWorker.js HTTP/1.1[0m" 304 -
+2026-08-16 08:57:09,674 127.0.0.1 - - [16/Aug/2026 08:57:09] "[36mGET /static/js/app.js HTTP/1.1[0m" 304 -
+2026-08-16 08:57:11,429 127.0.0.1 - - [16/Aug/2026 08:57:11] "GET /contact.html HTTP/1.1" 200 -
+2026-08-16 08:57:11,494 127.0.0.1 - - [16/Aug/2026 08:57:11] "[36mGET /static/css/bootstrap.min.css HTTP/1.1[0m" 304 -
+2026-08-16 08:57:11,497 127.0.0.1 - - [16/Aug/2026 08:57:11] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2026-08-16 08:57:11,499 127.0.0.1 - - [16/Aug/2026 08:57:11] "[36mGET /static/js/bootstrap.bundle.min.js HTTP/1.1[0m" 304 -
+2026-08-16 08:57:11,545 127.0.0.1 - - [16/Aug/2026 08:57:11] "[36mGET /static/js/serviceWorker.js HTTP/1.1[0m" 304 -
+2026-08-16 08:57:11,591 127.0.0.1 - - [16/Aug/2026 08:57:11] "[36mGET /static/js/app.js HTTP/1.1[0m" 304 -
+2026-08-16 08:57:13,294 127.0.0.1 - - [16/Aug/2026 08:57:13] "GET /portfolio.html HTTP/1.1" 200 -
+2026-08-16 08:57:13,348 127.0.0.1 - - [16/Aug/2026 08:57:13] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2026-08-16 08:57:13,362 127.0.0.1 - - [16/Aug/2026 08:57:13] "[36mGET /static/js/bootstrap.bundle.min.js HTTP/1.1[0m" 304 -
+2026-08-16 08:57:13,364 127.0.0.1 - - [16/Aug/2026 08:57:13] "[36mGET /static/css/bootstrap.min.css HTTP/1.1[0m" 304 -
+2026-08-16 08:57:13,414 127.0.0.1 - - [16/Aug/2026 08:57:13] "[36mGET /static/js/serviceWorker.js HTTP/1.1[0m" 304 -
+2026-08-16 08:57:13,447 127.0.0.1 - - [16/Aug/2026 08:57:13] "[36mGET /static/js/app.js HTTP/1.1[0m" 304 -
+2026-08-16 08:57:15,316 127.0.0.1 - - [16/Aug/2026 08:57:15] "GET /about.html HTTP/1.1" 200 -
+2026-08-16 08:57:15,380 127.0.0.1 - - [16/Aug/2026 08:57:15] "[36mGET /static/js/bootstrap.bundle.min.js HTTP/1.1[0m" 304 -
+2026-08-16 08:57:15,384 127.0.0.1 - - [16/Aug/2026 08:57:15] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2026-08-16 08:57:15,385 127.0.0.1 - - [16/Aug/2026 08:57:15] "[36mGET /static/css/bootstrap.min.css HTTP/1.1[0m" 304 -
+2026-08-16 08:57:15,433 127.0.0.1 - - [16/Aug/2026 08:57:15] "[36mGET /static/js/serviceWorker.js HTTP/1.1[0m" 304 -
+2026-08-16 08:57:15,480 127.0.0.1 - - [16/Aug/2026 08:57:15] "[36mGET /static/js/app.js HTTP/1.1[0m" 304 -
+2026-08-16 08:57:17,433 127.0.0.1 - - [16/Aug/2026 08:57:17] "GET / HTTP/1.1" 200 -
+2026-08-16 08:57:17,495 127.0.0.1 - - [16/Aug/2026 08:57:17] "[36mGET /static/css/bootstrap.min.css HTTP/1.1[0m" 304 -
+2026-08-16 08:57:17,498 127.0.0.1 - - [16/Aug/2026 08:57:17] "[36mGET /static/js/bootstrap.bundle.min.js HTTP/1.1[0m" 304 -
+2026-08-16 08:57:17,500 127.0.0.1 - - [16/Aug/2026 08:57:17] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2026-08-16 08:57:17,524 {"csp-report":{"document-uri":"https://obscure-cod-x66gvwxp957f6697-5000.app.github.dev/","referrer":"https://obscure-cod-x66gvwxp957f6697-5000.app.github.dev/about.html","violated-directive":"manifest-src","effective-directive":"manifest-src","original-policy":"script-src 'self'; img-src 'self' data:; child-src 'self'; default-src 'self'; style-src 'self'; media-src 'self'; object-src 'self'; connect-src 'self'; base-uri 'self'; report-uri /csp_report; font-src 'self'; worker-src 'self'; frame-ancestors 'none'; form-action 'self'; frame-src 'none'","disposition":"enforce","blocked-uri":"https://obscure-cod-x66gvwxp957f6697-5000.app.github.dev/static/manifest.json","status-code":200,"script-sample":""}}
+2026-08-16 08:57:17,524 127.0.0.1 - - [16/Aug/2026 08:57:17] "POST /csp_report HTTP/1.1" 200 -
+2026-08-16 08:57:17,546 127.0.0.1 - - [16/Aug/2026 08:57:17] "[36mGET /static/js/serviceWorker.js HTTP/1.1[0m" 304 -
+2026-08-16 08:57:17,583 127.0.0.1 - - [16/Aug/2026 08:57:17] "[36mGET /static/js/app.js HTTP/1.1[0m" 304 -
+2026-08-16 08:58:18,337 127.0.0.1 - - [16/Aug/2026 08:58:18] "GET / HTTP/1.1" 200 -
+2026-08-16 08:58:18,417 127.0.0.1 - - [16/Aug/2026 08:58:18] "GET /static/css/style.css HTTP/1.1" 200 -
+2026-08-16 08:58:18,434 127.0.0.1 - - [16/Aug/2026 08:58:18] "[36mGET /static/js/bootstrap.bundle.min.js HTTP/1.1[0m" 304 -
+2026-08-16 08:58:18,441 127.0.0.1 - - [16/Aug/2026 08:58:18] "[36mGET /static/css/bootstrap.min.css HTTP/1.1[0m" 304 -
+2026-08-16 08:58:18,464 {"csp-report":{"document-uri":"https://obscure-cod-x66gvwxp957f6697-5000.app.github.dev/","referrer":"https://obscure-cod-x66gvwxp957f6697-5000.app.github.dev/about.html","violated-directive":"manifest-src","effective-directive":"manifest-src","original-policy":"script-src 'self'; img-src 'self' data:; child-src 'self'; default-src 'self'; style-src 'self'; media-src 'self'; object-src 'self'; connect-src 'self'; base-uri 'self'; report-uri /csp_report; font-src 'self'; worker-src 'self'; frame-ancestors 'none'; form-action 'self'; frame-src 'none'","disposition":"enforce","blocked-uri":"https://obscure-cod-x66gvwxp957f6697-5000.app.github.dev/static/manifest.json","status-code":200,"script-sample":""}}
+2026-08-16 08:58:18,465 127.0.0.1 - - [16/Aug/2026 08:58:18] "POST /csp_report HTTP/1.1" 200 -
+2026-08-16 08:58:18,527 127.0.0.1 - - [16/Aug/2026 08:58:18] "[36mGET /static/js/serviceWorker.js HTTP/1.1[0m" 304 -
+2026-08-16 08:58:18,579 127.0.0.1 - - [16/Aug/2026 08:58:18] "[36mGET /static/js/app.js HTTP/1.1[0m" 304 -
+2026-08-16 08:58:18,638 127.0.0.1 - - [16/Aug/2026 08:58:18] "[36mGET /static/images/favicon.png HTTP/1.1[0m" 304 -
+2026-08-16 08:58:21,652 127.0.0.1 - - [16/Aug/2026 08:58:21] "GET / HTTP/1.1" 200 -
+2026-08-16 08:58:21,707 127.0.0.1 - - [16/Aug/2026 08:58:21] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2026-08-16 08:58:21,721 127.0.0.1 - - [16/Aug/2026 08:58:21] "[36mGET /static/css/bootstrap.min.css HTTP/1.1[0m" 304 -
+2026-08-16 08:58:21,724 127.0.0.1 - - [16/Aug/2026 08:58:21] "[36mGET /static/js/bootstrap.bundle.min.js HTTP/1.1[0m" 304 -
+2026-08-16 08:58:21,750 {"csp-report":{"document-uri":"https://obscure-cod-x66gvwxp957f6697-5000.app.github.dev/","referrer":"https://obscure-cod-x66gvwxp957f6697-5000.app.github.dev/about.html","violated-directive":"manifest-src","effective-directive":"manifest-src","original-policy":"script-src 'self'; img-src 'self' data:; child-src 'self'; default-src 'self'; style-src 'self'; media-src 'self'; object-src 'self'; connect-src 'self'; base-uri 'self'; report-uri /csp_report; font-src 'self'; worker-src 'self'; frame-ancestors 'none'; form-action 'self'; frame-src 'none'","disposition":"enforce","blocked-uri":"https://obscure-cod-x66gvwxp957f6697-5000.app.github.dev/static/manifest.json","status-code":200,"script-sample":""}}
+2026-08-16 08:58:21,750 127.0.0.1 - - [16/Aug/2026 08:58:21] "POST /csp_report HTTP/1.1" 200 -
+2026-08-16 08:58:21,767 127.0.0.1 - - [16/Aug/2026 08:58:21] "[36mGET /static/js/serviceWorker.js HTTP/1.1[0m" 304 -
+2026-08-16 08:58:21,812 127.0.0.1 - - [16/Aug/2026 08:58:21] "[36mGET /static/js/app.js HTTP/1.1[0m" 304 -
+2026-08-16 08:58:21,856 127.0.0.1 - - [16/Aug/2026 08:58:21] "[36mGET /static/images/favicon.png HTTP/1.1[0m" 304 -
+2026-08-16 08:58:29,541 127.0.0.1 - - [16/Aug/2026 08:58:29] "GET / HTTP/1.1" 200 -
+2026-08-16 08:58:29,616 127.0.0.1 - - [16/Aug/2026 08:58:29] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2026-08-16 08:58:29,617 127.0.0.1 - - [16/Aug/2026 08:58:29] "[36mGET /static/css/bootstrap.min.css HTTP/1.1[0m" 304 -
+2026-08-16 08:58:29,620 127.0.0.1 - - [16/Aug/2026 08:58:29] "[36mGET /static/js/bootstrap.bundle.min.js HTTP/1.1[0m" 304 -
+2026-08-16 08:58:29,673 {"csp-report":{"document-uri":"https://obscure-cod-x66gvwxp957f6697-5000.app.github.dev/","referrer":"https://obscure-cod-x66gvwxp957f6697-5000.app.github.dev/about.html","violated-directive":"manifest-src","effective-directive":"manifest-src","original-policy":"script-src 'self'; img-src 'self' data:; child-src 'self'; default-src 'self'; style-src 'self'; media-src 'self'; object-src 'self'; connect-src 'self'; base-uri 'self'; report-uri /csp_report; font-src 'self'; worker-src 'self'; frame-ancestors 'none'; form-action 'self'; frame-src 'none'","disposition":"enforce","blocked-uri":"https://obscure-cod-x66gvwxp957f6697-5000.app.github.dev/static/manifest.json","line-number":79,"source-file":"https://obscure-cod-x66gvwxp957f6697-5000.app.github.dev/","status-code":200,"script-sample":""}}
+2026-08-16 08:58:29,673 127.0.0.1 - - [16/Aug/2026 08:58:29] "POST /csp_report HTTP/1.1" 200 -
+2026-08-16 08:58:29,675 127.0.0.1 - - [16/Aug/2026 08:58:29] "[36mGET /static/js/serviceWorker.js HTTP/1.1[0m" 304 -
+2026-08-16 08:58:29,722 127.0.0.1 - - [16/Aug/2026 08:58:29] "[36mGET /static/js/app.js HTTP/1.1[0m" 304 -
+2026-08-16 08:58:29,779 127.0.0.1 - - [16/Aug/2026 08:58:29] "[36mGET /static/images/favicon.png HTTP/1.1[0m" 304 -
+2026-08-16 08:58:29,810 {"csp-report":{"document-uri":"https://obscure-cod-x66gvwxp957f6697-5000.app.github.dev/","referrer":"https://obscure-cod-x66gvwxp957f6697-5000.app.github.dev/about.html","violated-directive":"manifest-src","effective-directive":"manifest-src","original-policy":"script-src 'self'; img-src 'self' data:; child-src 'self'; default-src 'self'; style-src 'self'; media-src 'self'; object-src 'self'; connect-src 'self'; base-uri 'self'; report-uri /csp_report; font-src 'self'; worker-src 'self'; frame-ancestors 'none'; form-action 'self'; frame-src 'none'","disposition":"enforce","blocked-uri":"https://obscure-cod-x66gvwxp957f6697-5000.app.github.dev/static/manifest.json","status-code":200,"script-sample":""}}
+2026-08-16 08:58:29,810 127.0.0.1 - - [16/Aug/2026 08:58:29] "POST /csp_report HTTP/1.1" 200 -
+2026-08-16 09:00:20,071 127.0.0.1 - - [16/Aug/2026 09:00:20] "GET / HTTP/1.1" 200 -
+2026-08-16 09:00:20,149 127.0.0.1 - - [16/Aug/2026 09:00:20] "[36mGET /static/js/bootstrap.bundle.min.js HTTP/1.1[0m" 304 -
+2026-08-16 09:00:20,249 127.0.0.1 - - [16/Aug/2026 09:00:20] "[36mGET /static/css/bootstrap.min.css HTTP/1.1[0m" 304 -
+2026-08-16 09:00:20,271 {"csp-report":{"document-uri":"https://obscure-cod-x66gvwxp957f6697-5000.app.github.dev/","referrer":"https://obscure-cod-x66gvwxp957f6697-5000.app.github.dev/about.html","violated-directive":"manifest-src","effective-directive":"manifest-src","original-policy":"script-src 'self'; img-src 'self' data:; child-src 'self'; default-src 'self'; style-src 'self'; media-src 'self'; object-src 'self'; connect-src 'self'; base-uri 'self'; report-uri /csp_report; font-src 'self'; worker-src 'self'; frame-ancestors 'none'; form-action 'self'; frame-src 'none'","disposition":"enforce","blocked-uri":"https://obscure-cod-x66gvwxp957f6697-5000.app.github.dev/static/manifest.json","status-code":200,"script-sample":""}}
+2026-08-16 09:00:20,272 127.0.0.1 - - [16/Aug/2026 09:00:20] "POST /csp_report HTTP/1.1" 200 -
+2026-08-16 09:00:20,286 127.0.0.1 - - [16/Aug/2026 09:00:20] "GET /static/css/style.css HTTP/1.1" 200 -
+2026-08-16 09:00:20,364 127.0.0.1 - - [16/Aug/2026 09:00:20] "[36mGET /static/js/serviceWorker.js HTTP/1.1[0m" 304 -
+2026-08-16 09:00:20,414 127.0.0.1 - - [16/Aug/2026 09:00:20] "[36mGET /static/js/app.js HTTP/1.1[0m" 304 -
+2026-08-16 09:00:20,472 127.0.0.1 - - [16/Aug/2026 09:00:20] "[36mGET /static/images/favicon.png HTTP/1.1[0m" 304 -
+2026-08-16 09:00:25,094 127.0.0.1 - - [16/Aug/2026 09:00:25] "GET /contact.html HTTP/1.1" 200 -
+2026-08-16 09:00:25,161 127.0.0.1 - - [16/Aug/2026 09:00:25] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2026-08-16 09:00:25,170 127.0.0.1 - - [16/Aug/2026 09:00:25] "[36mGET /static/js/bootstrap.bundle.min.js HTTP/1.1[0m" 304 -
+2026-08-16 09:00:25,224 127.0.0.1 - - [16/Aug/2026 09:00:25] "[36mGET /static/css/bootstrap.min.css HTTP/1.1[0m" 304 -
+2026-08-16 09:00:25,246 127.0.0.1 - - [16/Aug/2026 09:00:25] "[33mGET /static/fonts/Geomatic.woff2 HTTP/1.1[0m" 404 -
+2026-08-16 09:00:25,277 127.0.0.1 - - [16/Aug/2026 09:00:25] "[36mGET /static/js/serviceWorker.js HTTP/1.1[0m" 304 -
+2026-08-16 09:00:25,324 127.0.0.1 - - [16/Aug/2026 09:00:25] "[36mGET /static/js/app.js HTTP/1.1[0m" 304 -
+2026-08-16 09:00:31,454 127.0.0.1 - - [16/Aug/2026 09:00:31] "GET /portfolio.html HTTP/1.1" 200 -
+2026-08-16 09:00:31,524 127.0.0.1 - - [16/Aug/2026 09:00:31] "[36mGET /static/css/bootstrap.min.css HTTP/1.1[0m" 304 -
+2026-08-16 09:00:31,527 127.0.0.1 - - [16/Aug/2026 09:00:31] "[36mGET /static/js/bootstrap.bundle.min.js HTTP/1.1[0m" 304 -
+2026-08-16 09:00:31,533 127.0.0.1 - - [16/Aug/2026 09:00:31] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2026-08-16 09:00:31,583 127.0.0.1 - - [16/Aug/2026 09:00:31] "[36mGET /static/js/serviceWorker.js HTTP/1.1[0m" 304 -
+2026-08-16 09:00:31,675 127.0.0.1 - - [16/Aug/2026 09:00:31] "[36mGET /static/js/app.js HTTP/1.1[0m" 304 -
+2026-08-16 09:00:37,719 127.0.0.1 - - [16/Aug/2026 09:00:37] "GET /about.html HTTP/1.1" 200 -
+2026-08-16 09:00:37,784 127.0.0.1 - - [16/Aug/2026 09:00:37] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2026-08-16 09:00:37,790 127.0.0.1 - - [16/Aug/2026 09:00:37] "[36mGET /static/js/bootstrap.bundle.min.js HTTP/1.1[0m" 304 -
+2026-08-16 09:00:37,795 127.0.0.1 - - [16/Aug/2026 09:00:37] "[36mGET /static/css/bootstrap.min.css HTTP/1.1[0m" 304 -
+2026-08-16 09:00:37,838 127.0.0.1 - - [16/Aug/2026 09:00:37] "[36mGET /static/js/serviceWorker.js HTTP/1.1[0m" 304 -
+2026-08-16 09:00:37,878 127.0.0.1 - - [16/Aug/2026 09:00:37] "[36mGET /static/js/app.js HTTP/1.1[0m" 304 -
+2026-08-16 09:01:37,589 127.0.0.1 - - [16/Aug/2026 09:01:37] "GET / HTTP/1.1" 200 -
+2026-08-16 09:01:37,656 127.0.0.1 - - [16/Aug/2026 09:01:37] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2026-08-16 09:01:37,671 127.0.0.1 - - [16/Aug/2026 09:01:37] "[36mGET /static/css/bootstrap.min.css HTTP/1.1[0m" 304 -
+2026-08-16 09:01:37,674 127.0.0.1 - - [16/Aug/2026 09:01:37] "[36mGET /static/js/bootstrap.bundle.min.js HTTP/1.1[0m" 304 -
+2026-08-16 09:01:37,694 {"csp-report":{"document-uri":"https://obscure-cod-x66gvwxp957f6697-5000.app.github.dev/","referrer":"https://obscure-cod-x66gvwxp957f6697-5000.app.github.dev/about.html","violated-directive":"manifest-src","effective-directive":"manifest-src","original-policy":"script-src 'self'; img-src 'self' data:; child-src 'self'; default-src 'self'; style-src 'self'; media-src 'self'; object-src 'self'; connect-src 'self'; base-uri 'self'; report-uri /csp_report; font-src 'self'; worker-src 'self'; frame-ancestors 'none'; form-action 'self'; frame-src 'none'","disposition":"enforce","blocked-uri":"https://obscure-cod-x66gvwxp957f6697-5000.app.github.dev/static/manifest.json","status-code":200,"script-sample":""}}
+2026-08-16 09:01:37,694 127.0.0.1 - - [16/Aug/2026 09:01:37] "POST /csp_report HTTP/1.1" 200 -
+2026-08-16 09:01:37,731 127.0.0.1 - - [16/Aug/2026 09:01:37] "[36mGET /static/js/serviceWorker.js HTTP/1.1[0m" 304 -
+2026-08-16 09:01:37,766 127.0.0.1 - - [16/Aug/2026 09:01:37] "[36mGET /static/js/app.js HTTP/1.1[0m" 304 -
+2026-08-16 09:04:37,801  * Detected change in '/workspaces/leo-dev/main.py', reloading
+2026-08-16 09:04:37,854  * Restarting with stat
+2026-08-16 09:04:38,187  * Debugger is active!
+2026-08-16 09:04:38,191  * Debugger PIN: 465-741-666
+2026-08-16 09:04:43,276  * Detected change in '/workspaces/leo-dev/main.py', reloading
+2026-08-16 09:04:43,322  * Restarting with stat
+2026-08-16 09:04:43,690  * Debugger is active!
+2026-08-16 09:04:43,693  * Debugger PIN: 465-741-666
+2026-08-16 09:04:45,304 127.0.0.1 - - [16/Aug/2026 09:04:45] "GET / HTTP/1.1" 200 -
+2026-08-16 09:04:45,565 127.0.0.1 - - [16/Aug/2026 09:04:45] "GET /static/css/style.css HTTP/1.1" 200 -
+2026-08-16 09:04:45,590 127.0.0.1 - - [16/Aug/2026 09:04:45] "[36mGET /static/js/bootstrap.bundle.min.js HTTP/1.1[0m" 304 -
+2026-08-16 09:04:45,595 127.0.0.1 - - [16/Aug/2026 09:04:45] "[36mGET /static/css/bootstrap.min.css HTTP/1.1[0m" 304 -
+2026-08-16 09:04:45,667 {"csp-report":{"document-uri":"https://obscure-cod-x66gvwxp957f6697-5000.app.github.dev/","referrer":"https://obscure-cod-x66gvwxp957f6697-5000.app.github.dev/about.html","violated-directive":"manifest-src","effective-directive":"manifest-src","original-policy":"script-src 'self'; img-src 'self' data:; child-src 'self'; default-src 'self'; style-src 'self' https://fonts.googleapis.com; media-src 'self'; object-src 'self'; connect-src 'self'; base-uri 'self'; report-uri /csp_report; font-src 'self' https://fonts.gstatic.com; worker-src 'self'; frame-ancestors 'none'; form-action 'self'; frame-src 'none'","disposition":"enforce","blocked-uri":"https://obscure-cod-x66gvwxp957f6697-5000.app.github.dev/static/manifest.json","status-code":200,"script-sample":""}}
+2026-08-16 09:04:45,667 127.0.0.1 - - [16/Aug/2026 09:04:45] "POST /csp_report HTTP/1.1" 200 -
+2026-08-16 09:04:46,273 127.0.0.1 - - [16/Aug/2026 09:04:46] "[36mGET /static/js/serviceWorker.js HTTP/1.1[0m" 304 -
+2026-08-16 09:04:46,306 127.0.0.1 - - [16/Aug/2026 09:04:46] "[36mGET /static/js/app.js HTTP/1.1[0m" 304 -
+2026-08-16 09:04:46,362 127.0.0.1 - - [16/Aug/2026 09:04:46] "[36mGET /static/images/favicon.png HTTP/1.1[0m" 304 -
+2026-08-16 09:05:47,347  * Detected change in '/workspaces/leo-dev/main.py', reloading
+2026-08-16 09:05:47,415  * Restarting with stat
+2026-08-16 09:05:47,724  * Debugger is active!
+2026-08-16 09:05:47,727  * Debugger PIN: 465-741-666
+2026-08-16 09:05:58,876  * Detected change in '/workspaces/leo-dev/main.py', reloading
+2026-08-16 09:05:58,919  * Restarting with stat
+2026-08-16 09:05:59,265  * Debugger is active!
+2026-08-16 09:05:59,268  * Debugger PIN: 465-741-666
+2026-08-16 09:06:03,468 127.0.0.1 - - [16/Aug/2026 09:06:03] "GET / HTTP/1.1" 200 -
+2026-08-16 09:06:03,740 127.0.0.1 - - [16/Aug/2026 09:06:03] "[36mGET /static/js/bootstrap.bundle.min.js HTTP/1.1[0m" 304 -
+2026-08-16 09:06:03,762 127.0.0.1 - - [16/Aug/2026 09:06:03] "[36mGET /static/css/bootstrap.min.css HTTP/1.1[0m" 304 -
+2026-08-16 09:06:03,769 {"csp-report":{"document-uri":"https://obscure-cod-x66gvwxp957f6697-5000.app.github.dev/","referrer":"https://obscure-cod-x66gvwxp957f6697-5000.app.github.dev/about.html","violated-directive":"manifest-src","effective-directive":"manifest-src","original-policy":"script-src 'self'; img-src 'self' data:; child-src 'self'; default-src 'self'; style-src 'self'; media-src 'self'; object-src 'self'; connect-src 'self'; base-uri 'self'; report-uri /csp_report; font-src 'self'; worker-src 'self'; frame-ancestors 'none'; form-action 'self'; frame-src 'none'","disposition":"enforce","blocked-uri":"https://obscure-cod-x66gvwxp957f6697-5000.app.github.dev/static/manifest.json","status-code":200,"script-sample":""}}
+2026-08-16 09:06:03,770 127.0.0.1 - - [16/Aug/2026 09:06:03] "POST /csp_report HTTP/1.1" 200 -
+2026-08-16 09:06:03,774 127.0.0.1 - - [16/Aug/2026 09:06:03] "GET /static/css/style.css HTTP/1.1" 200 -
+2026-08-16 09:06:03,825 127.0.0.1 - - [16/Aug/2026 09:06:03] "[36mGET /static/js/serviceWorker.js HTTP/1.1[0m" 304 -
+2026-08-16 09:06:03,862 127.0.0.1 - - [16/Aug/2026 09:06:03] "[36mGET /static/js/app.js HTTP/1.1[0m" 304 -
+2026-08-16 09:06:03,918 127.0.0.1 - - [16/Aug/2026 09:06:03] "[36mGET /static/images/favicon.png HTTP/1.1[0m" 304 -
+2026-08-16 09:06:06,933 127.0.0.1 - - [16/Aug/2026 09:06:06] "GET / HTTP/1.1" 200 -
+2026-08-16 09:06:07,001 127.0.0.1 - - [16/Aug/2026 09:06:07] "[36mGET /static/css/bootstrap.min.css HTTP/1.1[0m" 304 -
+2026-08-16 09:06:07,011 127.0.0.1 - - [16/Aug/2026 09:06:07] "[36mGET /static/js/bootstrap.bundle.min.js HTTP/1.1[0m" 304 -
+2026-08-16 09:06:07,015 127.0.0.1 - - [16/Aug/2026 09:06:07] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2026-08-16 09:06:07,163 127.0.0.1 - - [16/Aug/2026 09:06:07] "[36mGET /static/js/serviceWorker.js HTTP/1.1[0m" 304 -
+2026-08-16 09:06:07,166 {"csp-report":{"document-uri":"https://obscure-cod-x66gvwxp957f6697-5000.app.github.dev/","referrer":"https://obscure-cod-x66gvwxp957f6697-5000.app.github.dev/about.html","violated-directive":"manifest-src","effective-directive":"manifest-src","original-policy":"script-src 'self'; img-src 'self' data:; child-src 'self'; default-src 'self'; style-src 'self'; media-src 'self'; object-src 'self'; connect-src 'self'; base-uri 'self'; report-uri /csp_report; font-src 'self'; worker-src 'self'; frame-ancestors 'none'; form-action 'self'; frame-src 'none'","disposition":"enforce","blocked-uri":"https://obscure-cod-x66gvwxp957f6697-5000.app.github.dev/static/manifest.json","status-code":200,"script-sample":""}}
+2026-08-16 09:06:07,167 127.0.0.1 - - [16/Aug/2026 09:06:07] "POST /csp_report HTTP/1.1" 200 -
+2026-08-16 09:06:07,207 127.0.0.1 - - [16/Aug/2026 09:06:07] "[36mGET /static/js/app.js HTTP/1.1[0m" 304 -
+2026-08-16 09:06:07,263 127.0.0.1 - - [16/Aug/2026 09:06:07] "[36mGET /static/images/favicon.png HTTP/1.1[0m" 304 -
+2026-08-16 09:07:07,447 [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://10.0.0.201:5000
+2026-08-16 09:07:07,447 [33mPress CTRL+C to quit[0m
+2026-08-16 09:07:07,447  * Restarting with stat
+2026-08-16 09:07:07,829  * Debugger is active!
+2026-08-16 09:07:07,833  * Debugger PIN: 465-741-666
+2026-08-16 09:07:08,678 127.0.0.1 - - [16/Aug/2026 09:07:08] "GET / HTTP/1.1" 200 -
+2026-08-16 09:07:08,754 127.0.0.1 - - [16/Aug/2026 09:07:08] "[36mGET /static/css/bootstrap.min.css HTTP/1.1[0m" 304 -
+2026-08-16 09:07:08,808 {"csp-report":{"document-uri":"https://obscure-cod-x66gvwxp957f6697-5000.app.github.dev/","referrer":"https://obscure-cod-x66gvwxp957f6697.github.dev/","violated-directive":"manifest-src","effective-directive":"manifest-src","original-policy":"script-src 'self'; img-src 'self' data:; child-src 'self'; default-src 'self'; style-src 'self'; media-src 'self'; object-src 'self'; connect-src 'self'; base-uri 'self'; report-uri /csp_report; font-src 'self'; worker-src 'self'; frame-ancestors 'none'; form-action 'self'; frame-src 'none'","disposition":"enforce","blocked-uri":"https://obscure-cod-x66gvwxp957f6697-5000.app.github.dev/static/manifest.json","status-code":200,"script-sample":""}}
+2026-08-16 09:07:08,809 127.0.0.1 - - [16/Aug/2026 09:07:08] "POST /csp_report HTTP/1.1" 200 -
+2026-08-16 09:07:08,843 127.0.0.1 - - [16/Aug/2026 09:07:08] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2026-08-16 09:07:08,879 127.0.0.1 - - [16/Aug/2026 09:07:08] "[36mGET /static/js/bootstrap.bundle.min.js HTTP/1.1[0m" 304 -
+2026-08-16 09:07:08,924 127.0.0.1 - - [16/Aug/2026 09:07:08] "[36mGET /static/js/serviceWorker.js HTTP/1.1[0m" 304 -
+2026-08-16 09:07:08,963 127.0.0.1 - - [16/Aug/2026 09:07:08] "[36mGET /static/js/app.js HTTP/1.1[0m" 304 -
+2026-08-16 09:07:09,062 127.0.0.1 - - [16/Aug/2026 09:07:09] "[36mGET /static/images/favicon.png HTTP/1.1[0m" 304 -
+2026-08-16 09:08:42,505 127.0.0.1 - - [16/Aug/2026 09:08:42] "GET / HTTP/1.1" 200 -
+2026-08-16 09:08:42,693 127.0.0.1 - - [16/Aug/2026 09:08:42] "GET /static/css/style.css HTTP/1.1" 200 -
+2026-08-16 09:08:42,706 127.0.0.1 - - [16/Aug/2026 09:08:42] "[36mGET /static/js/bootstrap.bundle.min.js HTTP/1.1[0m" 304 -
+2026-08-16 09:08:42,722 127.0.0.1 - - [16/Aug/2026 09:08:42] "[36mGET /static/css/bootstrap.min.css HTTP/1.1[0m" 304 -
+2026-08-16 09:08:42,808 {"csp-report":{"document-uri":"https://obscure-cod-x66gvwxp957f6697-5000.app.github.dev/","referrer":"https://obscure-cod-x66gvwxp957f6697.github.dev/","violated-directive":"manifest-src","effective-directive":"manifest-src","original-policy":"script-src 'self'; img-src 'self' data:; child-src 'self'; default-src 'self'; style-src 'self'; media-src 'self'; object-src 'self'; connect-src 'self'; base-uri 'self'; report-uri /csp_report; font-src 'self'; worker-src 'self'; frame-ancestors 'none'; form-action 'self'; frame-src 'none'","disposition":"enforce","blocked-uri":"https://obscure-cod-x66gvwxp957f6697-5000.app.github.dev/static/manifest.json","status-code":200,"script-sample":""}}
+2026-08-16 09:08:42,808 127.0.0.1 - - [16/Aug/2026 09:08:42] "POST /csp_report HTTP/1.1" 200 -
+2026-08-16 09:08:42,867 127.0.0.1 - - [16/Aug/2026 09:08:42] "[36mGET /static/js/serviceWorker.js HTTP/1.1[0m" 304 -
+2026-08-16 09:08:42,907 127.0.0.1 - - [16/Aug/2026 09:08:42] "[36mGET /static/js/app.js HTTP/1.1[0m" 304 -
+2026-08-16 09:08:42,963 127.0.0.1 - - [16/Aug/2026 09:08:42] "[36mGET /static/images/favicon.png HTTP/1.1[0m" 304 -
+2026-08-16 09:08:45,189 127.0.0.1 - - [16/Aug/2026 09:08:45] "GET / HTTP/1.1" 200 -
+2026-08-16 09:08:45,252 127.0.0.1 - - [16/Aug/2026 09:08:45] "[36mGET /static/css/bootstrap.min.css HTTP/1.1[0m" 304 -
+2026-08-16 09:08:45,254 127.0.0.1 - - [16/Aug/2026 09:08:45] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2026-08-16 09:08:45,259 127.0.0.1 - - [16/Aug/2026 09:08:45] "[36mGET /static/js/bootstrap.bundle.min.js HTTP/1.1[0m" 304 -
+2026-08-16 09:08:45,280 {"csp-report":{"document-uri":"https://obscure-cod-x66gvwxp957f6697-5000.app.github.dev/","referrer":"https://obscure-cod-x66gvwxp957f6697.github.dev/","violated-directive":"manifest-src","effective-directive":"manifest-src","original-policy":"script-src 'self'; img-src 'self' data:; child-src 'self'; default-src 'self'; style-src 'self'; media-src 'self'; object-src 'self'; connect-src 'self'; base-uri 'self'; report-uri /csp_report; font-src 'self'; worker-src 'self'; frame-ancestors 'none'; form-action 'self'; frame-src 'none'","disposition":"enforce","blocked-uri":"https://obscure-cod-x66gvwxp957f6697-5000.app.github.dev/static/manifest.json","status-code":200,"script-sample":""}}
+2026-08-16 09:08:45,281 127.0.0.1 - - [16/Aug/2026 09:08:45] "POST /csp_report HTTP/1.1" 200 -
+2026-08-16 09:08:45,301 127.0.0.1 - - [16/Aug/2026 09:08:45] "[36mGET /static/js/serviceWorker.js HTTP/1.1[0m" 304 -
+2026-08-16 09:08:45,339 127.0.0.1 - - [16/Aug/2026 09:08:45] "[36mGET /static/js/app.js HTTP/1.1[0m" 304 -
+2026-08-16 09:08:45,393 127.0.0.1 - - [16/Aug/2026 09:08:45] "[36mGET /static/images/favicon.png HTTP/1.1[0m" 304 -
+2026-08-16 09:08:50,479 [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://10.0.0.201:5000
+2026-08-16 09:08:50,479 [33mPress CTRL+C to quit[0m
+2026-08-16 09:08:50,480  * Restarting with stat
+2026-08-16 09:08:50,874  * Debugger is active!
+2026-08-16 09:08:50,877  * Debugger PIN: 465-741-666
+2026-08-16 09:08:52,746 127.0.0.1 - - [16/Aug/2026 09:08:52] "GET / HTTP/1.1" 200 -
+2026-08-16 09:08:52,805 127.0.0.1 - - [16/Aug/2026 09:08:52] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2026-08-16 09:08:52,808 127.0.0.1 - - [16/Aug/2026 09:08:52] "[36mGET /static/js/bootstrap.bundle.min.js HTTP/1.1[0m" 304 -
+2026-08-16 09:08:52,810 127.0.0.1 - - [16/Aug/2026 09:08:52] "[36mGET /static/css/bootstrap.min.css HTTP/1.1[0m" 304 -
+2026-08-16 09:08:52,831 {"csp-report":{"document-uri":"https://obscure-cod-x66gvwxp957f6697-5000.app.github.dev/","referrer":"https://obscure-cod-x66gvwxp957f6697.github.dev/","violated-directive":"manifest-src","effective-directive":"manifest-src","original-policy":"script-src 'self'; img-src 'self' data:; child-src 'self'; default-src 'self'; style-src 'self'; media-src 'self'; object-src 'self'; connect-src 'self'; base-uri 'self'; report-uri /csp_report; font-src 'self'; worker-src 'self'; frame-ancestors 'none'; form-action 'self'; frame-src 'none'","disposition":"enforce","blocked-uri":"https://obscure-cod-x66gvwxp957f6697-5000.app.github.dev/static/manifest.json","status-code":200,"script-sample":""}}
+2026-08-16 09:08:52,832 127.0.0.1 - - [16/Aug/2026 09:08:52] "POST /csp_report HTTP/1.1" 200 -
+2026-08-16 09:08:52,877 127.0.0.1 - - [16/Aug/2026 09:08:52] "[36mGET /static/js/serviceWorker.js HTTP/1.1[0m" 304 -
+2026-08-16 09:08:52,917 127.0.0.1 - - [16/Aug/2026 09:08:52] "[36mGET /static/js/app.js HTTP/1.1[0m" 304 -
+2026-08-16 09:08:55,250 127.0.0.1 - - [16/Aug/2026 09:08:55] "GET /contact.html HTTP/1.1" 200 -
+2026-08-16 09:08:55,320 127.0.0.1 - - [16/Aug/2026 09:08:55] "[36mGET /static/js/bootstrap.bundle.min.js HTTP/1.1[0m" 304 -
+2026-08-16 09:08:55,324 127.0.0.1 - - [16/Aug/2026 09:08:55] "[36mGET /static/css/bootstrap.min.css HTTP/1.1[0m" 304 -
+2026-08-16 09:08:55,326 127.0.0.1 - - [16/Aug/2026 09:08:55] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2026-08-16 09:08:55,419 127.0.0.1 - - [16/Aug/2026 09:08:55] "[36mGET /static/js/serviceWorker.js HTTP/1.1[0m" 304 -
+2026-08-16 09:08:55,455 127.0.0.1 - - [16/Aug/2026 09:08:55] "[36mGET /static/js/app.js HTTP/1.1[0m" 304 -
+2026-08-16 09:12:07,312 [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://10.0.0.201:5000
+2026-08-16 09:12:07,312 [33mPress CTRL+C to quit[0m
+2026-08-16 09:12:07,313  * Restarting with stat
+2026-08-16 09:12:07,673  * Debugger is active!
+2026-08-16 09:12:07,678  * Debugger PIN: 465-741-666
+2026-08-16 09:12:09,848 127.0.0.1 - - [16/Aug/2026 09:12:09] "GET / HTTP/1.1" 200 -
+2026-08-16 09:12:10,069 127.0.0.1 - - [16/Aug/2026 09:12:10] "[36mGET /static/css/bootstrap.min.css HTTP/1.1[0m" 304 -
+2026-08-16 09:12:10,072 127.0.0.1 - - [16/Aug/2026 09:12:10] "[36mGET /static/js/bootstrap.bundle.min.js HTTP/1.1[0m" 304 -
+2026-08-16 09:12:10,073 127.0.0.1 - - [16/Aug/2026 09:12:10] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2026-08-16 09:12:10,143 {"csp-report":{"document-uri":"https://obscure-cod-x66gvwxp957f6697-5000.app.github.dev/","referrer":"https://obscure-cod-x66gvwxp957f6697.github.dev/","violated-directive":"manifest-src","effective-directive":"manifest-src","original-policy":"script-src 'self'; img-src 'self' data:; child-src 'self'; default-src 'self'; style-src 'self'; media-src 'self'; object-src 'self'; connect-src 'self'; base-uri 'self'; report-uri /csp_report; font-src 'self'; worker-src 'self'; frame-ancestors 'none'; form-action 'self'; frame-src 'none'","disposition":"enforce","blocked-uri":"https://obscure-cod-x66gvwxp957f6697-5000.app.github.dev/static/manifest.json","status-code":200,"script-sample":""}}
+2026-08-16 09:12:10,143 127.0.0.1 - - [16/Aug/2026 09:12:10] "POST /csp_report HTTP/1.1" 200 -
+2026-08-16 09:12:10,167 127.0.0.1 - - [16/Aug/2026 09:12:10] "[36mGET /static/js/serviceWorker.js HTTP/1.1[0m" 304 -
+2026-08-16 09:12:10,211 127.0.0.1 - - [16/Aug/2026 09:12:10] "[36mGET /static/js/app.js HTTP/1.1[0m" 304 -
+2026-08-16 09:12:39,795 [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://10.0.0.201:5000
+2026-08-16 09:12:39,795 [33mPress CTRL+C to quit[0m
+2026-08-16 09:12:39,796  * Restarting with stat
+2026-08-16 09:12:40,157  * Debugger is active!
+2026-08-16 09:12:40,161  * Debugger PIN: 465-741-666
+2026-08-16 09:12:40,607 127.0.0.1 - - [16/Aug/2026 09:12:40] "GET / HTTP/1.1" 200 -
+2026-08-16 09:12:40,677 127.0.0.1 - - [16/Aug/2026 09:12:40] "[36mGET /static/js/bootstrap.bundle.min.js HTTP/1.1[0m" 304 -
+2026-08-16 09:12:40,747 {"csp-report":{"document-uri":"https://obscure-cod-x66gvwxp957f6697-5000.app.github.dev/","referrer":"https://obscure-cod-x66gvwxp957f6697.github.dev/","violated-directive":"manifest-src","effective-directive":"manifest-src","original-policy":"script-src 'self'; img-src 'self' data:; child-src 'self'; default-src 'self'; style-src 'self'; media-src 'self'; object-src 'self'; connect-src 'self'; base-uri 'self'; report-uri /csp_report; font-src 'self'; worker-src 'self'; frame-ancestors 'none'; form-action 'self'; frame-src 'none'","disposition":"enforce","blocked-uri":"https://obscure-cod-x66gvwxp957f6697-5000.app.github.dev/static/manifest.json","status-code":200,"script-sample":""}}
+2026-08-16 09:12:40,747 127.0.0.1 - - [16/Aug/2026 09:12:40] "POST /csp_report HTTP/1.1" 200 -
+2026-08-16 09:12:40,812 127.0.0.1 - - [16/Aug/2026 09:12:40] "[36mGET /static/css/bootstrap.min.css HTTP/1.1[0m" 304 -
+2026-08-16 09:12:40,820 127.0.0.1 - - [16/Aug/2026 09:12:40] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2026-08-16 09:12:40,884 127.0.0.1 - - [16/Aug/2026 09:12:40] "[36mGET /static/js/serviceWorker.js HTTP/1.1[0m" 304 -
+2026-08-16 09:12:40,920 127.0.0.1 - - [16/Aug/2026 09:12:40] "[36mGET /static/js/app.js HTTP/1.1[0m" 304 -
+2026-08-16 09:14:48,407 [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://10.0.0.201:5000
+2026-08-16 09:14:48,407 [33mPress CTRL+C to quit[0m
+2026-08-16 09:14:48,408  * Restarting with stat
+2026-08-16 09:14:48,774  * Debugger is active!
+2026-08-16 09:14:48,778  * Debugger PIN: 465-741-666
+2026-08-16 09:14:49,573 127.0.0.1 - - [16/Aug/2026 09:14:49] "GET / HTTP/1.1" 200 -
+2026-08-16 09:14:49,791 127.0.0.1 - - [16/Aug/2026 09:14:49] "GET /static/css/style.css HTTP/1.1" 200 -
+2026-08-16 09:14:49,792 127.0.0.1 - - [16/Aug/2026 09:14:49] "[36mGET /static/css/bootstrap.min.css HTTP/1.1[0m" 304 -
+2026-08-16 09:14:49,813 127.0.0.1 - - [16/Aug/2026 09:14:49] "[36mGET /static/js/bootstrap.bundle.min.js HTTP/1.1[0m" 304 -
+2026-08-16 09:14:49,843 {"csp-report":{"document-uri":"https://obscure-cod-x66gvwxp957f6697-5000.app.github.dev/","referrer":"https://obscure-cod-x66gvwxp957f6697.github.dev/","violated-directive":"manifest-src","effective-directive":"manifest-src","original-policy":"script-src 'self'; img-src 'self' data:; child-src 'self'; default-src 'self'; style-src 'self'; media-src 'self'; object-src 'self'; connect-src 'self'; base-uri 'self'; report-uri /csp_report; font-src 'self'; worker-src 'self'; frame-ancestors 'none'; form-action 'self'; frame-src 'none'","disposition":"enforce","blocked-uri":"https://obscure-cod-x66gvwxp957f6697-5000.app.github.dev/static/manifest.json","status-code":200,"script-sample":""}}
+2026-08-16 09:14:49,843 127.0.0.1 - - [16/Aug/2026 09:14:49] "POST /csp_report HTTP/1.1" 200 -
+2026-08-16 09:14:49,933 127.0.0.1 - - [16/Aug/2026 09:14:49] "[36mGET /static/js/serviceWorker.js HTTP/1.1[0m" 304 -
+2026-08-16 09:14:49,961 127.0.0.1 - - [16/Aug/2026 09:14:49] "[36mGET /static/js/app.js HTTP/1.1[0m" 304 -

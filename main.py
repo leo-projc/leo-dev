@@ -86,5 +86,20 @@ def csp_report():
     return "done"
 
 
+@app.route("/about.html", methods=["GET"], endpoint="about_page")
+def about():
+    return render_template("/about.html")
+
+
+@app.route("/contact.html", methods=["GET"], endpoint="contact_page")
+def contact():
+    return render_template("/contact.html")
+
+
+@app.route("/portfolio.html", methods=["GET"], endpoint="portfolio_page")
+def portfolio():
+    return render_template("/portfolio.html")
+
+
 if __name__ == "__main__":
     app.run(debug=True, host="0.0.0.0", port=5000)

@@ -22,4 +22,22 @@ document.addEventListener("DOMContentLoaded", function () {
       link.removeAttribute("aria-current");
     }
   });
+
+  const titles = document.querySelectorAll(".site-title");
+  titles.forEach(function (el) {
+    const text = el.textContent;
+    el.textContent = "";
+    el.classList.add("typewriter-cursor");
+    let i = 0;
+    function type() {
+      if (i < text.length) {
+        el.textContent += text.charAt(i);
+        i++;
+        setTimeout(type, 80);
+      } else {
+        el.classList.remove("typewriter-cursor");
+      }
+    }
+    type();
+  });
 });
