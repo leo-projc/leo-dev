@@ -7,17 +7,29 @@
     />
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link rel="stylesheet" type="text/css" href="static/css/style.css" />
-    <title>Bootstrap demo</title>
+    <title>leo.projc</title>
     <link rel="manifest" href="static/manifest.json" />
     <link rel="icon" type="image/x-icon" href="static/images/favicon.png" />
     <meta name="theme-color" content="" />
     <link href="static/css/bootstrap.min.css" rel="stylesheet" />
+    <link rel="stylesheet" type="text/css" href="static/css/style.css" />
   </head>
   <body>
     {% include "partials/menu.html" %}
     <main>{% block content %}{% endblock %}</main>
     {% include "partials/footer.html" %}
+    <div class="scroll-indicator" id="scrollIndicator" aria-label="Scroll down">
+      <svg viewBox="0 0 16 16" fill="currentColor">
+        <path
+          fill-rule="evenodd"
+          d="M8 15A7 7 0 1 0 8 1a7 7 0 0 0 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"
+        />
+        <path
+          fill-rule="evenodd"
+          d="M8 4.5a.5.5 0 0 1 .5.5v5.793l2.146-2.147a.5.5 0 0 1 .708.708l-3 3a.5.5 0 0 1-.708 0l-3-3a.5.5 0 1 1 .708-.708L7.5 10.793V5a.5.5 0 0 1 .5-.5z"
+        />
+      </svg>
+    </div>
     <script src="static/js/bootstrap.bundle.min.js"></script>
     <script src="static/js/serviceWorker.js"></script>
     <script src="static/js/app.js"></script>

@@ -40,4 +40,26 @@ document.addEventListener("DOMContentLoaded", function () {
     }
     type();
   });
+
+  const indicator = document.getElementById("scrollIndicator");
+  if (indicator) {
+    indicator.classList.remove("fade-out");
+
+    const handleScroll = () => {
+      if (window.scrollY > 50) {
+        indicator.classList.add("fade-out");
+      } else {
+        indicator.classList.remove("fade-out");
+      }
+    };
+    window.addEventListener("scroll", handleScroll);
+
+    indicator.addEventListener("click", function () {
+      window.scrollTo({
+        top: window.innerHeight,
+        behavior: "smooth",
+      });
+      indicator.classList.add("fade-out");
+    });
+  }
 });

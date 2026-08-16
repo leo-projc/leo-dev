@@ -1,4 +1,5 @@
 {% extends 'layout.html' %} {% block content %}
+
 <div class="landing-hero container">
   <div class="row">
     <h1 class="display-1 site-title">leo.projc</h1>
@@ -6,20 +7,65 @@
 </div>
 
 <div class="container landing-card-section">
-  <article class="content-card">
-    <div
-      class="content-card-image"
-      role="img"
-      aria-label="Image placeholder"
-    ></div>
-    <div class="content-card-text">
-      <h2>About</h2>
-      <p>Hi, I'm <strong>Leo Projceski</strong></p>
-      <p>
-        I'm a current year 12 student undertaking the HSC, aspiring to become
-        software engineer.
-      </p>
-    </div>
-  </article>
+  <div class="d-flex flex-column gap-4 w-100">
+    <!-- INTRODUCTION -->
+    <article class="content-card homepage-split-card">
+      <div
+        class="content-card-image"
+        role="img"
+        aria-label="Introduction image"
+      ></div>
+
+      <div class="content-card-text">
+        <h2>Introduction</h2>
+
+        <p>Hi, I'm <strong>Leo Projceski.</strong></p>
+
+        <p>
+          I'm a Year 12 student working towards a career in software
+          engineering, with interests across software development, artificial
+          intelligence, cybersecurity and digital media.
+        </p>
+
+        <p>
+          <a href="/about" class="homepage-card-link">
+            More about me
+            <i class="bi bi-arrow-up-right"></i>
+          </a>
+        </p>
+      </div>
+    </article>
+
+    <!-- SELECTED WORK -->
+    <article class="content-card homepage-split-card homepage-split-reverse">
+      <div
+        class="content-card-image"
+        role="img"
+        aria-label="Selected work image"
+      ></div>
+
+      <div class="content-card-text">
+        <h2>Selected Work</h2>
+
+        <p>
+          A selection of projects exploring software development, technology and
+          digital media.
+        </p>
+
+        <p>
+          My portfolio documents some of the work I've completed while
+          developing my technical and creative skills.
+        </p>
+
+        <p>
+          <a href="/portfolio" class="homepage-card-link">
+            View my portfolio
+            <i class="bi bi-arrow-up-right"></i>
+          </a>
+        </p>
+      </div>
+    </article>
+  </div>
 </div>
+
 {% endblock %}

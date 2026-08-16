@@ -1,6 +1,7 @@
 * {
   box-sizing: border-box;
 }
+
 html,
 body {
   min-height: 100%;
@@ -10,12 +11,18 @@ body {
   min-height: 100vh;
   display: flex;
   flex-direction: column;
+  background-color: #000 !important;
+  color: #fff !important;
 }
 
 main {
   position: relative;
   flex: 1;
 }
+
+/* ========================================
+   PAGE LAYOUT
+   ======================================== */
 
 .landing-hero {
   position: relative;
@@ -30,9 +37,18 @@ main {
   padding-bottom: 3rem;
 }
 
+.container {
+  color: #fff;
+}
+
+/* ========================================
+   CONTENT CARDS
+   ======================================== */
+
 .content-card {
   display: flex;
   flex-direction: column;
+  width: 100%;
   min-height: 50vh;
   overflow: hidden;
   border: 1px solid #333;
@@ -48,30 +64,6 @@ main {
   background-color: #1a1a1a;
   transform: scale(1.02);
   box-shadow: 0 0.5rem 1.5rem rgba(255, 255, 255, 0.08);
-}
-
-.content-card-row {
-  flex-direction: row;
-  width: 100%;
-}
-
-.content-card-row .content-card-image {
-  flex: 0 0 40%;
-  border-right: 1px solid #333;
-  border-bottom: none;
-}
-
-.content-card-row .content-card-text {
-  flex: 0 0 60%;
-}
-
-.content-card-row.content-card-reverse {
-  flex-direction: row-reverse;
-}
-
-.content-card-row.content-card-reverse .content-card-image {
-  border-right: none;
-  border-left: 1px solid #333;
 }
 
 .content-card-image {
@@ -97,6 +89,91 @@ main {
 .content-card-lg {
   min-height: 60vh;
 }
+
+/* ========================================
+   PORTFOLIO / 60-40 CARDS
+   ======================================== */
+
+.content-card-row {
+  flex-direction: row;
+  width: 100%;
+}
+
+.content-card-row .content-card-image {
+  flex: 0 0 40%;
+  border-right: 1px solid #333;
+  border-bottom: none;
+}
+
+.content-card-row .content-card-text {
+  flex: 0 0 60%;
+}
+
+.content-card-row.content-card-reverse {
+  flex-direction: row-reverse;
+}
+
+.content-card-row.content-card-reverse .content-card-image {
+  border-right: none;
+  border-left: 1px solid #333;
+}
+
+/* ========================================
+   HOMEPAGE / 50-50 CARDS
+   ======================================== */
+
+.homepage-split-card {
+  flex-direction: row;
+  width: 100%;
+}
+
+.homepage-split-card .content-card-image {
+  flex: 0 0 50%;
+  width: 50%;
+  min-width: 0;
+  border-right: 1px solid #333;
+  border-bottom: none;
+}
+
+.homepage-split-card .content-card-text {
+  flex: 0 0 50%;
+  width: 50%;
+}
+
+/* Reverses the second homepage card so the
+   text is on the left and image is on the right. */
+
+.homepage-split-reverse {
+  flex-direction: row-reverse;
+}
+
+.homepage-split-reverse .content-card-image {
+  border-right: none;
+  border-left: 1px solid #333;
+}
+
+/* Homepage navigation links */
+
+.homepage-card-link {
+  color: #fff;
+  text-decoration: underline;
+  text-underline-offset: 0.2em;
+  text-decoration-thickness: 1px;
+}
+
+.homepage-card-link:hover,
+.homepage-card-link:focus {
+  color: #ccc;
+}
+
+.homepage-card-link i {
+  margin-left: 0.3rem;
+  font-size: 0.9em;
+}
+
+/* ========================================
+   CONTACT CARD LINKS
+   ======================================== */
 
 .content-card-links {
   display: flex;
@@ -148,56 +225,10 @@ main {
   pointer-events: auto;
 }
 
-/* Keep the card usable on narrow screens. */
-@media (max-width: 576px) {
-  .content-card {
-    min-height: 50vh;
-  }
+/* ========================================
+   NAVIGATION
+   ======================================== */
 
-  .content-card-text {
-    padding: 1.25rem;
-  }
-
-  .content-card-row,
-  .content-card-row.content-card-reverse {
-    flex-direction: column;
-  }
-
-  .content-card-row .content-card-image {
-    border-right: none;
-    border-left: none;
-    border-bottom: 1px solid #333;
-  }
-
-  .content-card-links {
-    flex: 0 0 auto;
-  }
-
-  .hover-reveal-box {
-    min-height: 6rem;
-  }
-}
-
-.footer-container {
-  flex-shrink: 0;
-  padding: 0.75rem 0;
-}
-
-.footer-container hr {
-  margin: 0.25rem 0;
-  border-color: #333;
-}
-
-body {
-  background-color: #000 !important;
-  color: #fff !important;
-}
-.container {
-  color: #fff;
-}
-
-.row {
-}
 .navbar {
   background-color: #000 !important;
   border-bottom: 1px solid #222;
@@ -212,11 +243,26 @@ body {
   color: #ccc !important;
 }
 
+/* ========================================
+   FOOTER
+   ======================================== */
+
+.footer-container {
+  flex-shrink: 0;
+  padding: 0.75rem 0;
+}
+
+.footer-container hr {
+  margin: 0.25rem 0;
+  border-color: #333;
+}
+
 footer,
 .footer-container {
   padding: 0.75rem 0;
   font-size: 0.85rem;
   line-height: 1.6;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 footer hr {
@@ -224,27 +270,41 @@ footer hr {
   border-color: #333;
 }
 
+.footer-brand {
+  color: #444;
+}
+
 footer a {
-  color: #ccc;
+  color: #444;
   margin-right: 1rem;
   text-decoration: none;
 }
 
 footer a:hover {
-  color: #fff;
+  color: #666;
 }
+
+/* ========================================
+   FONTS
+   ======================================== */
 
 @font-face {
   font-family: "Space Mono";
-  src: url("../fonts/SpaceMono-Regular.ttf") format("truetype");
+  src:
+    url("../fonts/SpaceMono-Regular.woff2") format("woff2"),
+    url("../fonts/SpaceMono-Regular.ttf") format("truetype");
   font-weight: 400;
+  font-style: normal;
   font-display: swap;
 }
 
 @font-face {
   font-family: "Space Mono";
-  src: url("../fonts/SpaceMono-Bold.ttf") format("truetype");
+  src:
+    url("../fonts/SpaceMono-Bold.woff2") format("woff2"),
+    url("../fonts/SpaceMono-Bold.ttf") format("truetype");
   font-weight: 700;
+  font-style: normal;
   font-display: swap;
 }
 
@@ -259,6 +319,10 @@ select {
   font-weight: 400;
 }
 
+/* ========================================
+   PAGE TITLE
+   ======================================== */
+
 .site-title {
   position: absolute;
   top: 50%;
@@ -269,12 +333,20 @@ select {
   white-space: nowrap;
 }
 
+/* ========================================
+   ICONS
+   ======================================== */
+
 .icon-svg {
   width: 1em;
   height: 1em;
   vertical-align: -0.125em;
   margin: 0 0.25em;
 }
+
+/* ========================================
+   TYPEWRITER CURSOR
+   ======================================== */
 
 .typewriter-cursor::after {
   content: "|";
@@ -287,7 +359,121 @@ select {
   100% {
     opacity: 1;
   }
+
   50% {
     opacity: 0;
+  }
+}
+
+/* ========================================
+   SCROLL INDICATOR
+   ======================================== */
+
+.scroll-indicator {
+  position: fixed;
+  bottom: 2rem;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 20;
+  color: #fff;
+  opacity: 0.85;
+  cursor: pointer;
+  transition:
+    opacity 0.4s ease-in-out,
+    color 0.2s ease-in-out;
+  animation: bounce-scroll 1.6s ease-in-out infinite;
+}
+
+.scroll-indicator:hover {
+  color: #66b2ff;
+  opacity: 1;
+}
+
+.scroll-indicator.fade-out {
+  opacity: 0;
+  pointer-events: none;
+}
+
+.scroll-indicator svg {
+  width: 2.5rem;
+  height: 2.5rem;
+}
+
+@keyframes bounce-scroll {
+  0%,
+  100% {
+    transform: translateX(-50%) translateY(0);
+  }
+
+  50% {
+    transform: translateX(-50%) translateY(-0.5rem);
+  }
+}
+
+/* ========================================
+   MOBILE
+   ======================================== */
+
+@media (max-width: 576px) {
+  .content-card {
+    min-height: 50vh;
+  }
+
+  .content-card-text {
+    padding: 1.25rem;
+  }
+
+  /* Portfolio 60/40 cards become vertical */
+
+  .content-card-row,
+  .content-card-row.content-card-reverse {
+    flex-direction: column;
+  }
+
+  .content-card-row .content-card-image,
+  .content-card-row.content-card-reverse .content-card-image {
+    flex: 0 0 auto;
+    width: 100%;
+    min-height: 16rem;
+    border-right: none;
+    border-left: none;
+    border-bottom: 1px solid #333;
+  }
+
+  .content-card-row .content-card-text {
+    flex: 1;
+    width: 100%;
+  }
+
+  /* Homepage 50/50 cards become vertical */
+
+  .homepage-split-card,
+  .homepage-split-reverse {
+    flex-direction: column;
+  }
+
+  .homepage-split-card .content-card-image,
+  .homepage-split-reverse .content-card-image {
+    flex: 0 0 auto;
+    width: 100%;
+    min-height: 16rem;
+    border-right: none;
+    border-left: none;
+    border-bottom: 1px solid #333;
+  }
+
+  .homepage-split-card .content-card-text {
+    flex: 1;
+    width: 100%;
+  }
+
+  /* Contact card */
+
+  .content-card-links {
+    flex: 0 0 auto;
+  }
+
+  .hover-reveal-box {
+    min-height: 6rem;
   }
 }
