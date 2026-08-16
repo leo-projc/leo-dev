@@ -1,4 +1,5 @@
 {% extends 'layout.html' %} {% block content %}
+
 <div class="landing-hero container">
   <div class="row">
     <h1 class="display-1 site-title">Portfolio</h1>
@@ -7,30 +8,82 @@
 
 <div class="container landing-card-section">
   <div class="d-flex flex-column gap-4 w-100">
-    <article class="content-card content-card-row">
-      <div
-        class="content-card-image"
-        role="img"
-        aria-label="Project one image placeholder"
-      ></div>
-      <div class="content-card-text">
-        <h2>Project One</h2>
-        <p>Placeholder project description goes here.</p>
+    <!-- GITHUB -->
+    <article class="content-card github-card">
+      <!-- 30% GITHUB LOGO -->
+      <a
+        class="github-card-logo"
+        href="https://github.com/leo-projc"
+        target="_blank"
+        rel="noopener"
+        aria-label="Visit Leo Projceski's GitHub profile"
+      >
+        <i class="bi bi-github" aria-hidden="true"></i>
+      </a>
+
+      <!-- 70% TEXT -->
+      <div class="content-card-text github-card-text">
+        <h2>GitHub</h2>
+
+        <p>Public repositories, source code and ongoing work.</p>
+
         <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Replace this
-          section with real project details and links.
+          My GitHub profile contains a broad range of public repositories,
+          primarily consisting of school work and project based development.
+          These repositories showcase the skills and concepts I’ve developed
+          throughout my schooling, using a wide range of programming languages,
+          tools and technologies across areas including software development,
+          databases and web development.
         </p>
+
+        <!-- SMALL HOVER-REVEAL BUTTON -->
+        <a
+          class="github-reveal-button"
+          href="https://github.com/leo-projc"
+          target="_blank"
+          rel="noopener"
+        >
+          <span class="github-reveal-label">
+            <i class="bi bi-github" aria-hidden="true"></i>
+            GitHub
+          </span>
+
+          <span class="github-reveal-content">
+            View profile
+
+            <svg
+              class="icon-svg"
+              viewBox="0 0 16 16"
+              fill="currentColor"
+              aria-hidden="true"
+            >
+              <path
+                fill-rule="evenodd"
+                d="M8.636 3.5a.5.5 0 0 0-.5-.5H1.5A1.5 1.5 0 0 0 0 4.5v10A1.5 1.5 0 0 0 1.5 16h10a1.5 1.5 0 0 0 1.5-1.5V7.864a.5.5 0 0 0-1 0V14.5a.5.5 0 0 1-.5.5h-10a.5.5 0 0 1-.5-.5v-10a.5.5 0 0 1 .5-.5h6.636a.5.5 0 0 0 .5-.5z"
+              />
+              <path
+                fill-rule="evenodd"
+                d="M16 .5a.5.5 0 0 0-.5-.5h-5a.5.5 0 0 0 0 1h3.793L6.146 9.146a.5.5 0 1 0 .708.708L15 1.707V5.5a.5.5 0 0 0 1 0v-5z"
+              />
+            </svg>
+          </span>
+        </a>
       </div>
     </article>
+
+    <!-- SECOND PROJECT -->
     <article class="content-card content-card-row content-card-reverse">
       <div
         class="content-card-image"
         role="img"
         aria-label="Project two image placeholder"
       ></div>
+
       <div class="content-card-text">
         <h2>Project Two</h2>
+
         <p>Placeholder project description goes here.</p>
+
         <p>
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Replace this
           section with real project details and links.
@@ -39,4 +92,5 @@
     </article>
   </div>
 </div>
+
 {% endblock %}

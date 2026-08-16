@@ -1,6 +1,7 @@
 <nav class="navbar navbar-expand-lg navbar-dark" data-bs-theme="dark">
   <div class="container-fluid">
-    <a class="navbar-brand" href="/">leo.projc</a>
+    <a class="navbar-brand" href="{{ url_for('index') }}">leo.projc</a>
+
     <button
       class="navbar-toggler"
       type="button"
@@ -12,18 +13,21 @@
     >
       <span class="navbar-toggler-icon"></span>
     </button>
+
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
       <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
         <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="/about.html"
-            >About</a
-          >
+          <a class="nav-link" href="{{ url_for('about_page') }}">About</a>
         </li>
+
         <li class="nav-item">
-          <a class="nav-link" href="/contact.html">Contact</a>
+          <a class="nav-link" href="{{ url_for('contact_page') }}">Contact</a>
         </li>
+
         <li class="nav-item">
-          <a class="nav-link" href="/portfolio.html">Portfolio</a>
+          <a class="nav-link" href="{{ url_for('portfolio_page') }}">
+            Portfolio
+          </a>
         </li>
       </ul>
     </div>

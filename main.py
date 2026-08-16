@@ -3,6 +3,7 @@ from flask import redirect
 from flask import render_template
 from flask import request
 from flask import jsonify
+from flask import url_for
 import requests
 from flask_wtf import CSRFProtect
 from flask_csp.csp import csp_header
@@ -27,14 +28,14 @@ app.secret_key = b"_53oi3uriq9pifpff;apl"
 csrf = CSRFProtect(app)
 
 
-# Redirect index.html to domain root for consistent UX
+# Redirect index.html and other legacy index paths to the domain root.
 @app.route("/index", methods=["GET"])
 @app.route("/index.htm", methods=["GET"])
 @app.route("/index.asp", methods=["GET"])
 @app.route("/index.php", methods=["GET"])
 @app.route("/index.html", methods=["GET"])
 def root():
-    return redirect("/", 302)
+    return redirect(url_for("index"), 302)
 
 
 @app.route("/", methods=["POST", "GET"])
@@ -59,12 +60,12 @@ def root():
     }
 )
 def index():
-    return render_template("/index.html")
+    return render_template("index.html")
 
 
 @app.route("/privacy.html", methods=["GET"])
 def privacy():
-    return render_template("/privacy.html")
+    return render_template("privacy.html")
 
 
 # example CSRF protected form
@@ -73,9 +74,9 @@ def form():
     if request.method == "POST":
         email = request.form["email"]
         text = request.form["text"]
-        return render_template("/form.html")
+        return render_template("form.html")
     else:
-        return render_template("/form.html")
+        return render_template("form.html")
 
 
 # Endpoint for logging CSP violations
@@ -86,19 +87,36 @@ def csp_report():
     return "done"
 
 
-@app.route("/about.html", methods=["GET"], endpoint="about_page")
-def about():
-    return render_template("/about.html")
+# Clean public page URLs
+@app.route("/about", methods=["GET"])
+def about_page():
+    return render_template("about.html")
 
 
-@app.route("/contact.html", methods=["GET"], endpoint="contact_page")
-def contact():
-    return render_template("/contact.html")
+@app.route("/contact", methods=["GET"])
+def contact_page():
+    return render_template("contact.html")
 
 
-@app.route("/portfolio.html", methods=["GET"], endpoint="portfolio_page")
-def portfolio():
-    return render_template("/portfolio.html")
+@app.route("/portfolio", methods=["GET"])
+def portfolio_page():
+    return render_template("portfolio.html")
+
+
+# Redirect the old .html URLs to the clean versions
+@app.route("/about.html", methods=["GET"])
+def about_html_redirect():
+    return redirect(url_for("about_page"), 302)
+
+
+@app.route("/contact.html", methods=["GET"])
+def contact_html_redirect():
+    return redirect(url_for("contact_page"), 302)
+
+
+@app.route("/portfolio.html", methods=["GET"])
+def portfolio_html_redirect():
+    return redirect(url_for("portfolio_page"), 302)
 
 
 if __name__ == "__main__":

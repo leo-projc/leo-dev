@@ -91,7 +91,7 @@ main {
 }
 
 /* ========================================
-   PORTFOLIO / 60-40 CARDS
+   60 / 40 ROW CARDS
    ======================================== */
 
 .content-card-row {
@@ -101,12 +101,14 @@ main {
 
 .content-card-row .content-card-image {
   flex: 0 0 40%;
+  width: 40%;
   border-right: 1px solid #333;
   border-bottom: none;
 }
 
 .content-card-row .content-card-text {
   flex: 0 0 60%;
+  width: 60%;
 }
 
 .content-card-row.content-card-reverse {
@@ -119,40 +121,40 @@ main {
 }
 
 /* ========================================
-   HOMEPAGE / 50-50 CARDS
+   HOMEPAGE
    ======================================== */
 
-.homepage-split-card {
-  flex-direction: row;
+/* Contact + Portfolio side-by-side cards */
+
+.homepage-card-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1.5rem;
   width: 100%;
 }
 
-.homepage-split-card .content-card-image {
-  flex: 0 0 50%;
-  width: 50%;
-  min-width: 0;
-  border-right: 1px solid #333;
-  border-bottom: none;
+/* Entire lower homepage cards are clickable */
+
+.homepage-link-card {
+  min-height: 30vh;
+  color: #fff;
+  text-decoration: none;
+  cursor: pointer;
 }
 
-.homepage-split-card .content-card-text {
-  flex: 0 0 50%;
-  width: 50%;
+.homepage-link-card:visited,
+.homepage-link-card:hover,
+.homepage-link-card:focus {
+  color: #fff;
+  text-decoration: none;
 }
 
-/* Reverses the second homepage card so the
-   text is on the left and image is on the right. */
-
-.homepage-split-reverse {
-  flex-direction: row-reverse;
+.homepage-link-card:focus-visible {
+  outline: 2px solid #fff;
+  outline-offset: 3px;
 }
 
-.homepage-split-reverse .content-card-image {
-  border-right: none;
-  border-left: 1px solid #333;
-}
-
-/* Homepage navigation links */
+/* Homepage call-to-action links */
 
 .homepage-card-link {
   color: #fff;
@@ -161,14 +163,33 @@ main {
   text-decoration-thickness: 1px;
 }
 
+.homepage-card-link:visited {
+  color: #fff;
+}
+
 .homepage-card-link:hover,
 .homepage-card-link:focus {
   color: #ccc;
 }
 
-.homepage-card-link i {
+.homepage-card-link .bi {
   margin-left: 0.3rem;
-  font-size: 0.9em;
+}
+
+/* ========================================
+   BOOTSTRAP-STYLE ARROW ICON
+   ======================================== */
+
+.bi {
+  display: inline-block;
+  font-style: normal;
+  font-weight: normal;
+  line-height: 1;
+  vertical-align: -0.05em;
+}
+
+.bi-arrow-up-right::before {
+  content: "↗";
 }
 
 /* ========================================
@@ -223,6 +244,150 @@ main {
 .hover-reveal-box:hover .hover-reveal-content {
   opacity: 1;
   pointer-events: auto;
+}
+
+/* ========================================
+   GITHUB PORTFOLIO CARD
+   ======================================== */
+
+.github-card {
+  flex-direction: row;
+  width: 100%;
+}
+
+/* 30% GitHub logo section */
+
+.github-card-logo {
+  display: flex;
+  flex: 0 0 30%;
+  align-items: center;
+  justify-content: center;
+  min-width: 0;
+  color: #fff;
+  background-color: #222;
+  border-right: 1px solid #333;
+  text-decoration: none;
+  overflow: hidden;
+}
+
+.github-card-logo:visited {
+  color: #fff;
+}
+
+.github-card-logo:hover {
+  color: #fff;
+}
+
+/* Large GitHub logo */
+
+.github-card-logo .bi-github {
+  width: 45%;
+  height: 45%;
+  transition:
+    transform 0.2s ease-in-out,
+    opacity 0.2s ease-in-out;
+}
+
+.github-card-logo:hover .bi-github {
+  transform: scale(1.08);
+  opacity: 0.8;
+}
+
+/* 70% GitHub text section */
+
+.github-card-text {
+  position: relative;
+  flex: 0 0 70%;
+  width: 70%;
+  padding-bottom: 5.5rem;
+}
+
+/* ========================================
+   GITHUB HOVER BUTTON
+   ======================================== */
+
+.github-reveal-button {
+  position: absolute;
+  right: 2rem;
+  bottom: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 11rem;
+  height: 3.25rem;
+  overflow: hidden;
+  color: #fff;
+  background-color: #222;
+  border: 1px solid #444;
+  border-radius: 0.35rem;
+  text-decoration: none;
+  transition:
+    background-color 0.2s ease-in-out,
+    border-color 0.2s ease-in-out,
+    transform 0.2s ease-in-out;
+}
+
+.github-reveal-button:visited {
+  color: #fff;
+}
+
+.github-reveal-button:hover {
+  color: #fff;
+  background-color: #2a2a2a;
+  border-color: #666;
+  transform: translateY(-2px);
+}
+
+.github-reveal-label,
+.github-reveal-content {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.45rem;
+  transition: opacity 0.2s ease-in-out;
+}
+
+.github-reveal-label {
+  opacity: 1;
+}
+
+.github-reveal-content {
+  opacity: 0;
+}
+
+.github-reveal-button:hover .github-reveal-label {
+  opacity: 0;
+}
+
+.github-reveal-button:hover .github-reveal-content {
+  opacity: 1;
+}
+
+.github-reveal-button .bi-github {
+  width: 1.1em;
+  height: 1.1em;
+}
+
+/* ========================================
+   LOCAL GITHUB ICON
+   ======================================== */
+
+.bi-github {
+  display: inline-block;
+  width: 1em;
+  height: 1em;
+  background-color: currentColor;
+
+  -webkit-mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3E%3Cpath d='M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27s1.36.09 2 .27c1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.01 8.01 0 0 0 16 8c0-4.42-3.58-8-8-8'/%3E%3C/svg%3E");
+  -webkit-mask-repeat: no-repeat;
+  -webkit-mask-position: center;
+  -webkit-mask-size: contain;
+
+  mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3E%3Cpath d='M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27s1.36.09 2 .27c1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.01 8.01 0 0 0 16 8c0-4.42-3.58-8-8-8'/%3E%3C/svg%3E");
+  mask-repeat: no-repeat;
+  mask-position: center;
+  mask-size: contain;
 }
 
 /* ========================================
@@ -334,7 +499,7 @@ select {
 }
 
 /* ========================================
-   ICONS
+   GENERAL ICONS
    ======================================== */
 
 .icon-svg {
@@ -369,29 +534,52 @@ select {
    SCROLL INDICATOR
    ======================================== */
 
+/*
+  IMPORTANT:
+
+  The scroll indicator is HIDDEN by default.
+
+  JavaScript adds .is-visible only after confirming
+  that the browser is actually at the top of the page.
+
+  This prevents the arrow appearing briefly when a
+  page is refreshed while scrolled further down.
+*/
+
 .scroll-indicator {
   position: fixed;
   bottom: 2rem;
   left: 50%;
   transform: translateX(-50%);
   z-index: 20;
+
   color: #fff;
-  opacity: 0.85;
+
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+
   cursor: pointer;
+
   transition:
     opacity 0.4s ease-in-out,
+    visibility 0.4s ease-in-out,
     color 0.2s ease-in-out;
+
   animation: bounce-scroll 1.6s ease-in-out infinite;
 }
 
-.scroll-indicator:hover {
-  color: #66b2ff;
-  opacity: 1;
+/* Only visible after JavaScript confirms scroll position */
+
+.scroll-indicator.is-visible {
+  opacity: 0.85;
+  visibility: visible;
+  pointer-events: auto;
 }
 
-.scroll-indicator.fade-out {
-  opacity: 0;
-  pointer-events: none;
+.scroll-indicator.is-visible:hover {
+  color: #66b2ff;
+  opacity: 1;
 }
 
 .scroll-indicator svg {
@@ -423,7 +611,7 @@ select {
     padding: 1.25rem;
   }
 
-  /* Portfolio 60/40 cards become vertical */
+  /* 60 / 40 cards become vertical */
 
   .content-card-row,
   .content-card-row.content-card-reverse {
@@ -445,26 +633,14 @@ select {
     width: 100%;
   }
 
-  /* Homepage 50/50 cards become vertical */
+  /* Homepage Contact + Portfolio cards stack */
 
-  .homepage-split-card,
-  .homepage-split-reverse {
-    flex-direction: column;
+  .homepage-card-grid {
+    grid-template-columns: 1fr;
   }
 
-  .homepage-split-card .content-card-image,
-  .homepage-split-reverse .content-card-image {
-    flex: 0 0 auto;
-    width: 100%;
+  .homepage-link-card {
     min-height: 16rem;
-    border-right: none;
-    border-left: none;
-    border-bottom: 1px solid #333;
-  }
-
-  .homepage-split-card .content-card-text {
-    flex: 1;
-    width: 100%;
   }
 
   /* Contact card */
@@ -475,5 +651,35 @@ select {
 
   .hover-reveal-box {
     min-height: 6rem;
+  }
+
+  /* GitHub portfolio card */
+
+  .github-card {
+    flex-direction: column;
+  }
+
+  .github-card-logo {
+    flex: 0 0 auto;
+    width: 100%;
+    min-height: 16rem;
+    border-right: none;
+    border-bottom: 1px solid #333;
+  }
+
+  .github-card-logo .bi-github {
+    width: 6rem;
+    height: 6rem;
+  }
+
+  .github-card-text {
+    flex: 1;
+    width: 100%;
+    padding-bottom: 5.5rem;
+  }
+
+  .github-reveal-button {
+    right: 1.25rem;
+    bottom: 1.25rem;
   }
 }

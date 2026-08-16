@@ -9,7 +9,8 @@
 <div class="container landing-card-section">
   <div class="d-flex flex-column gap-4 w-100">
     <!-- INTRODUCTION -->
-    <article class="content-card homepage-split-card">
+    <!-- 40% IMAGE / 60% TEXT -->
+    <article class="content-card content-card-row">
       <div
         class="content-card-image"
         role="img"
@@ -28,43 +29,59 @@
         </p>
 
         <p>
-          <a href="/about" class="homepage-card-link">
+          <a href="{{ url_for('about_page') }}" class="homepage-card-link">
             More about me
-            <i class="bi bi-arrow-up-right"></i>
+            <i class="bi bi-arrow-up-right" aria-hidden="true"></i>
           </a>
         </p>
       </div>
     </article>
 
-    <!-- SELECTED WORK -->
-    <article class="content-card homepage-split-card homepage-split-reverse">
-      <div
-        class="content-card-image"
-        role="img"
-        aria-label="Selected work image"
-      ></div>
+    <!-- CONTACT + PORTFOLIO -->
+    <!-- EACH TAKES 50% OF THE ROW -->
+    <div class="homepage-card-grid">
+      <!-- CONTACT -->
+      <a
+        href="{{ url_for('contact_page') }}"
+        class="content-card homepage-link-card"
+        aria-label="Go to contact page"
+      >
+        <div class="content-card-text">
+          <h2>Contact</h2>
 
-      <div class="content-card-text">
-        <h2>Selected Work</h2>
+          <p>
+            For questions, comments, project enquiries or potential
+            opportunities, get in touch via email or LinkedIn.
+          </p>
 
-        <p>
-          A selection of projects exploring software development, technology and
-          digital media.
-        </p>
+          <span class="homepage-card-link">
+            Get in touch
+            <i class="bi bi-arrow-up-right" aria-hidden="true"></i>
+          </span>
+        </div>
+      </a>
 
-        <p>
-          My portfolio documents some of the work I've completed while
-          developing my technical and creative skills.
-        </p>
+      <!-- PORTFOLIO -->
+      <a
+        href="{{ url_for('portfolio_page') }}"
+        class="content-card homepage-link-card"
+        aria-label="Go to portfolio page"
+      >
+        <div class="content-card-text">
+          <h2>Portfolio</h2>
 
-        <p>
-          <a href="/portfolio" class="homepage-card-link">
+          <p>
+            Explore a selection of my work across software development,
+            technology, digital media and a range of creative projects.
+          </p>
+
+          <span class="homepage-card-link">
             View my portfolio
-            <i class="bi bi-arrow-up-right"></i>
-          </a>
-        </p>
-      </div>
-    </article>
+            <i class="bi bi-arrow-up-right" aria-hidden="true"></i>
+          </span>
+        </div>
+      </a>
+    </div>
   </div>
 </div>
 
