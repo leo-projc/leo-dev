@@ -1,0 +1,149 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta
+      http-equiv="Content-Security-Policy"
+      content="base-uri 'self'; default-src 'self'; style-src 'self'; script-src 'self'; img-src 'self' data:; media-src 'self'; font-src 'self'; connect-src 'self'; object-src 'self'; worker-src 'self'; frame-src 'none'; form-action 'self'; manifest-src 'self'"
+    />
+
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>About | leo.projc</title>
+
+    <link rel="manifest" href="/static/manifest.json" />
+    <link rel="icon" type="image/x-icon" href="/static/images/favicon.png" />
+
+    <link href="/static/css/bootstrap.min.css" rel="stylesheet" />
+    <link rel="stylesheet" type="text/css" href="/static/css/style.css" />
+  </head>
+
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-dark" data-bs-theme="dark">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="/">leo.projc</a>
+
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link" href="/about.html">About</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" href="/contact.html">Contact</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" href="/portfolio.html">Portfolio</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <main>
+      <div class="landing-hero container">
+        <div class="row">
+          <h1 class="display-1 site-title">About</h1>
+        </div>
+      </div>
+
+      <div class="container landing-card-section">
+        <div class="d-flex flex-column gap-4 w-100">
+          <article class="content-card">
+            <div class="content-card-text">
+              <h2>Profile</h2>
+
+              <p>
+                Aspiring software engineer with interests across
+                <strong>technology, creativity and business.</strong>
+              </p>
+
+              <p>
+                I'm an 18 year old Year 12 student currently undertaking the
+                Higher School Certificate (HSC), with the goal of pursuing a
+                degree and career in software engineering. My interests span
+                software development, artificial intelligence and
+                cybersecurity, with a particular interest in understanding how
+                technology and the systems behind it work. I currently work
+                primarily with Python, alongside SQL, HTML and CSS, while
+                continuing to develop my knowledge across different areas of
+                computing.
+              </p>
+            </div>
+          </article>
+
+          <article
+            class="content-card content-card-row content-card-reverse"
+          >
+            <div
+              class="content-card-image"
+              role="img"
+              aria-label="Interests and direction image"
+            ></div>
+
+            <div class="content-card-text">
+              <h2>Interests &amp; Direction</h2>
+
+              <p>
+                I'm drawn to technology by the opportunity to build practical
+                solutions, understand how things work, and create things that
+                can be useful to others. Alongside software, I have a strong
+                interest in video editing and digital media, with experience
+                using Adobe Premiere Pro and After Effects for editing, visual
+                effects and post production.
+              </p>
+
+              <p>
+                I'm also interested in the commercial side of technology,
+                particularly marketing and the way products, ideas and
+                experiences are communicated to people. Looking ahead, I plan
+                to study software engineering at university while continuing
+                to develop a broad combination of technical, creative and
+                commercial skills.
+              </p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </main>
+
+    <div class="footer-container container-fluid text-center">
+      <hr />
+      <span class="footer-brand">leo.projc</span>
+    </div>
+
+    <div
+      class="scroll-indicator"
+      id="scrollIndicator"
+      aria-label="Scroll down"
+    >
+      <svg viewBox="0 0 16 16" fill="currentColor">
+        <path
+          fill-rule="evenodd"
+          d="M8 15A7 7 0 1 0 8 1a7 7 0 0 0 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"
+        />
+        <path
+          fill-rule="evenodd"
+          d="M8 4.5a.5.5 0 0 1 .5.5v5.793l2.146-2.147a.5.5 0 0 1 .708.708l-3 3a.5.5 0 0 1-.708 0l-3-3a.5.5 0 1 1 .708-.708L7.5 10.793V5a.5.5 0 0 1 .5-.5z"
+        />
+      </svg>
+    </div>
+
+    <script src="/static/js/bootstrap.bundle.min.js"></script>
+    <script src="/static/js/serviceWorker.js"></script>
+    <script src="/static/js/app.js"></script>
+  </body>
+</html>
