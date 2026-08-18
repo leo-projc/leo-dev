@@ -3,7 +3,7 @@
   <head>
     <meta
       http-equiv="Content-Security-Policy"
-      content="base-uri 'self'; default-src 'self'; style-src 'self'; script-src 'self'; img-src 'self' data:; media-src 'self'; font-src 'self'; connect-src 'self'; object-src 'self'; worker-src 'self'; frame-src 'none'; form-action 'self'; manifest-src 'self'"
+      content="base-uri 'self'; default-src 'self'; style-src 'self'; script-src 'self' 'sha256-FoA8P2zd8PX6zcFa+Ds6/4Hxpsf7tp9GMm4zRIWFgQ8='; img-src 'self' data:; media-src 'self'; font-src 'self'; connect-src 'self'; object-src 'self'; worker-src 'self'; frame-src 'none'; form-action 'self'; manifest-src 'self'"
     />
 
     <meta charset="utf-8" />
@@ -98,8 +98,10 @@
 
               <a
                 class="hover-reveal-content"
-                href="mailto:leo.projc@gmail.com?subject=Website%20Enquiry"
-                aria-label="Send an email to Leo Projceski"
+                href="#emailOptionsModal"
+                data-bs-toggle="modal"
+                data-bs-target="#emailOptionsModal"
+                aria-label="Email Leo Projceski"
               >
                 leo.projc@gmail.com
 
@@ -187,8 +189,107 @@
       </svg>
     </div>
 
+    <!-- EMAIL OPTIONS -->
+    <div
+      class="modal fade"
+      id="emailOptionsModal"
+      tabindex="-1"
+      aria-labelledby="emailOptionsModalLabel"
+      aria-hidden="true"
+      data-bs-theme="dark"
+    >
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content bg-dark text-light border-secondary">
+          <div class="modal-header border-secondary">
+            <div>
+              <h5 class="modal-title" id="emailOptionsModalLabel">
+                Send an email
+              </h5>
+              <small class="text-secondary">leo.projc@gmail.com</small>
+            </div>
+
+            <button
+              type="button"
+              class="btn-close btn-close-white"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+
+          <div class="modal-body">
+            <div class="d-grid gap-2">
+              <a
+                class="btn btn-outline-light"
+                href="mailto:leo.projc@gmail.com?subject=Website%20Enquiry"
+              >
+                Open email app
+              </a>
+
+              <a
+                class="btn btn-outline-light"
+                href="https://mail.google.com/mail/?view=cm&fs=1&to=leo.projc@gmail.com&su=Website%20Enquiry"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Gmail
+              </a>
+
+              <a
+                class="btn btn-outline-light"
+                href="https://outlook.live.com/mail/0/deeplink/compose?to=leo.projc@gmail.com&subject=Website%20Enquiry"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Outlook
+              </a>
+
+              <button
+                type="button"
+                class="btn btn-outline-light"
+                id="copyEmailButton"
+              >
+                Copy address
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
     <script src="/static/js/bootstrap.bundle.min.js"></script>
     <script src="/static/js/serviceWorker.js"></script>
     <script src="/static/js/app.js"></script>
+
+    <script>
+      document
+        .getElementById("copyEmailButton")
+        .addEventListener("click", async () => {
+          const e = "leo.projc@gmail.com",
+            t = document.getElementById("copyEmailButton"),
+            o = t.textContent;
+          let n = !1;
+          try {
+            (await navigator.clipboard.writeText(e), (n = !0));
+          } catch {
+            const t = document.createElement("textarea");
+            ((t.value = e),
+              t.setAttribute("readonly", ""),
+              (t.style.position = "fixed"),
+              (t.style.opacity = "0"),
+              document.body.appendChild(t),
+              t.select());
+            try {
+              n = document.execCommand("copy");
+            } catch {}
+            document.body.removeChild(t);
+          }
+          n
+            ? ((t.textContent = "Copied"),
+              setTimeout(() => {
+                t.textContent = o;
+              }, 1500))
+            : window.prompt("Copy this email address:", e);
+        });
+    </script>
   </body>
 </html>
