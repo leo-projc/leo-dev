@@ -130,4 +130,121 @@ document.addEventListener("DOMContentLoaded", function () {
       });
     });
   }
+
+  /* ========================================
+     EMAIL CONTACT
+     ======================================== */
+
+  const emailContactLink = document.getElementById("emailContactLink");
+  const emailOptionsModal = document.getElementById("emailOptionsModal");
+  const copyEmailButton = document.getElementById("copyEmailButton");
+
+  /*
+    Detect phones.
+
+    Phones use the normal mailto link so the phone's
+    configured email application can handle the email.
+
+    Desktop and laptop browsers instead receive the
+    Gmail / Outlook / Copy Address popup.
+
+    iPads and other tablets are treated like larger
+    devices and receive the popup.
+  */
+
+  const isPhone =
+    (navigator.userAgentData && navigator.userAgentData.mobile === true) ||
+    /iPhone|iPod|Windows Phone|IEMobile|Opera Mini/i.test(
+      navigator.userAgent,
+    ) ||
+    (/Android/i.test(navigator.userAgent) &&
+      /Mobile/i.test(navigator.userAgent));
+
+  /*
+    On desktop and laptop, intercept the normal
+    mailto link and open the Bootstrap modal.
+
+    On phones, nothing is intercepted. The browser
+    follows the mailto link normally.
+  */
+
+  if (emailContactLink && emailOptionsModal && !isPhone) {
+    emailContactLink.addEventListener("click", function (event) {
+      event.preventDefault();
+
+      const modal = bootstrap.Modal.getOrCreateInstance(emailOptionsModal);
+
+      modal.show();
+    });
+  }
+
+  /* ========================================
+     COPY EMAIL ADDRESS
+     ======================================== */
+
+  if (copyEmailButton) {
+    copyEmailButton.addEventListener("click", async function () {
+      const emailAddress = "leo.projc@gmail.com";
+      const originalText = copyEmailButton.textContent.trim();
+
+      try {
+        /*
+          Use the modern Clipboard API whenever the
+          browser allows it.
+        */
+
+        if (navigator.clipboard && window.isSecureContext) {
+          await navigator.clipboard.writeText(emailAddress);
+        } else {
+          /*
+            Fallback for browsers or pages where the
+            Clipboard API is unavailable.
+          */
+
+          const temporaryInput = document.createElement("textarea");
+
+          temporaryInput.value = emailAddress;
+          temporaryInput.setAttribute("readonly", "");
+          temporaryInput.style.position = "fixed";
+          temporaryInput.style.left = "-9999px";
+          temporaryInput.style.top = "0";
+          temporaryInput.style.opacity = "0";
+
+          document.body.appendChild(temporaryInput);
+
+          temporaryInput.focus();
+          temporaryInput.select();
+          temporaryInput.setSelectionRange(0, temporaryInput.value.length);
+
+          const copied = document.execCommand("copy");
+
+          document.body.removeChild(temporaryInput);
+
+          if (!copied) {
+            throw new Error("Copy command failed");
+          }
+        }
+
+        /*
+          Give the user visible confirmation.
+        */
+
+        copyEmailButton.textContent = "Copied";
+
+        setTimeout(function () {
+          copyEmailButton.textContent = originalText;
+        }, 1500);
+      } catch (error) {
+        /*
+          Last-resort fallback.
+
+          If the browser blocks automated clipboard
+          access entirely, show the address selected
+          in a browser dialog so it can still be copied.
+        */
+
+        window.prompt("Copy this email address:", emailAddress);
+      }
+    });
+  }
 });
