@@ -104,17 +104,17 @@ def portfolio_page():
 
 
 # Redirect the old .html URLs to the clean versions
-@app.route("/about.html", methods=["GET"])
+@app.route("/about", methods=["GET"])
 def about_html_redirect():
     return redirect(url_for("about_page"), 302)
 
 
-@app.route("/contact.html", methods=["GET"])
+@app.route("/contact", methods=["GET"])
 def contact_html_redirect():
     return redirect(url_for("contact_page"), 302)
 
 
-@app.route("/portfolio.html", methods=["GET"])
+@app.route("/portfolio", methods=["GET"])
 def portfolio_html_redirect():
     return redirect(url_for("portfolio_page"), 302)
 
