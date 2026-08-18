@@ -132,6 +132,50 @@ document.addEventListener("DOMContentLoaded", function () {
   }
 
   /* ========================================
+     CARD TEXT REVEAL
+     ======================================== */
+
+  const cards = document.querySelectorAll(".content-card");
+  const reduceMotion = window.matchMedia(
+    "(prefers-reduced-motion: reduce)",
+  ).matches;
+
+  cards.forEach(function (card) {
+    const textItems = card.querySelectorAll(".content-card-text > *");
+
+    textItems.forEach(function (item, index) {
+      item.style.setProperty("--reveal-order", index);
+    });
+
+    card.classList.add("card-reveal-ready");
+  });
+
+  if (reduceMotion || !("IntersectionObserver" in window)) {
+    cards.forEach(function (card) {
+      card.classList.add("is-revealed");
+    });
+  } else {
+    const cardObserver = new IntersectionObserver(
+      function (entries, observer) {
+        entries.forEach(function (entry) {
+          if (entry.isIntersecting) {
+            entry.target.classList.add("is-revealed");
+            observer.unobserve(entry.target);
+          }
+        });
+      },
+      {
+        threshold: 0.2,
+        rootMargin: "0px 0px -8% 0px",
+      },
+    );
+
+    cards.forEach(function (card) {
+      cardObserver.observe(card);
+    });
+  }
+
+  /* ========================================
      EMAIL CONTACT
      ======================================== */
 
