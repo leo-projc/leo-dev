@@ -1960,3 +1960,80 @@
 2026-08-17 00:58:14,688 127.0.0.1 - - [17/Aug/2026 00:58:14] "[36mGET /static/fonts/SpaceMono-Regular.woff2 HTTP/1.1[0m" 304 -
 2026-08-17 00:58:14,690 127.0.0.1 - - [17/Aug/2026 00:58:14] "[36mGET /static/fonts/SpaceMono-Bold.woff2 HTTP/1.1[0m" 304 -
 2026-08-17 00:58:14,723 127.0.0.1 - - [17/Aug/2026 00:58:14] "[36mGET /static/js/app.js HTTP/1.1[0m" 304 -
+2026-10-22 07:37:46,799 [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://10.0.0.15:5000
+2026-10-22 07:37:46,799 [33mPress CTRL+C to quit[0m
+2026-10-22 07:37:46,800  * Restarting with stat
+2026-10-22 07:37:47,230  * Debugger is active!
+2026-10-22 07:37:47,235  * Debugger PIN: 132-412-084
+2026-10-22 07:38:27,354 127.0.0.1 - - [22/Oct/2026 07:38:27] "GET / HTTP/1.1" 200 -
+2026-10-22 07:38:27,597 127.0.0.1 - - [22/Oct/2026 07:38:27] "GET /static/css/bootstrap.min.css HTTP/1.1" 200 -
+2026-10-22 07:38:27,601 127.0.0.1 - - [22/Oct/2026 07:38:27] "GET /static/css/style.css HTTP/1.1" 200 -
+2026-10-22 07:38:27,656 127.0.0.1 - - [22/Oct/2026 07:38:27] "GET /static/js/bootstrap.bundle.min.js HTTP/1.1" 200 -
+2026-10-22 07:38:27,815 {"csp-report":{"document-uri":"https://fluffy-space-halibut-g99v7q6rxr9c9v7x-5000.app.github.dev/","referrer":"https://github.com/","violated-directive":"manifest-src","effective-directive":"manifest-src","original-policy":"script-src 'self'; img-src 'self' data:; child-src 'self'; default-src 'self'; style-src 'self'; media-src 'self'; object-src 'self'; connect-src 'self'; base-uri 'self'; report-uri /csp_report; font-src 'self'; worker-src 'self'; frame-ancestors 'none'; form-action 'self'; frame-src 'none'","disposition":"enforce","blocked-uri":"https://fluffy-space-halibut-g99v7q6rxr9c9v7x-5000.app.github.dev/static/manifest.json","status-code":200,"script-sample":""}}
+2026-10-22 07:38:27,815 127.0.0.1 - - [22/Oct/2026 07:38:27] "POST /csp_report HTTP/1.1" 200 -
+2026-10-22 07:38:27,956 127.0.0.1 - - [22/Oct/2026 07:38:27] "GET /static/js/serviceWorker.js HTTP/1.1" 200 -
+2026-10-22 07:38:28,815 127.0.0.1 - - [22/Oct/2026 07:38:28] "GET /static/js/app.js HTTP/1.1" 200 -
+2026-10-22 07:38:29,049 127.0.0.1 - - [22/Oct/2026 07:38:29] "GET /static/fonts/SpaceMono-Regular.woff2 HTTP/1.1" 200 -
+2026-10-22 07:38:29,059 127.0.0.1 - - [22/Oct/2026 07:38:29] "GET /static/fonts/SpaceMono-Bold.woff2 HTTP/1.1" 200 -
+2026-10-22 07:38:29,643 127.0.0.1 - - [22/Oct/2026 07:38:29] "[36mGET /static/js/serviceWorker.js HTTP/1.1[0m" 304 -
+2026-10-22 07:38:29,680 127.0.0.1 - - [22/Oct/2026 07:38:29] "GET /static/images/favicon.png HTTP/1.1" 200 -
+2026-10-22 07:38:29,862 127.0.0.1 - - [22/Oct/2026 07:38:29] "GET / HTTP/1.1" 200 -
+2026-10-22 07:38:29,867 127.0.0.1 - - [22/Oct/2026 07:38:29] "[33mGET /static/js/static/images/logo.png HTTP/1.1[0m" 404 -
+2026-10-22 07:38:29,876 127.0.0.1 - - [22/Oct/2026 07:38:29] "[33mGET /static/js/static/js/app.js HTTP/1.1[0m" 404 -
+2026-10-22 07:38:29,884 127.0.0.1 - - [22/Oct/2026 07:38:29] "[33mGET /static/js/static/css/style.css HTTP/1.1[0m" 404 -
+2026-10-22 07:38:29,894 127.0.0.1 - - [22/Oct/2026 07:38:29] "[33mGET /static/js/static/js/bootstrap.bundle.min.js HTTP/1.1[0m" 404 -
+2026-10-22 07:38:29,903 127.0.0.1 - - [22/Oct/2026 07:38:29] "[33mGET /static/js/static/icons/icon-192x192.png HTTP/1.1[0m" 404 -
+2026-10-22 07:38:29,907 127.0.0.1 - - [22/Oct/2026 07:38:29] "[33mGET /static/js/static/icons/icon-384x384.png HTTP/1.1[0m" 404 -
+2026-10-22 07:38:29,911 127.0.0.1 - - [22/Oct/2026 07:38:29] "[33mGET /static/js/static/css/style.css/bootstrap.min.css HTTP/1.1[0m" 404 -
+2026-10-22 07:38:29,915 127.0.0.1 - - [22/Oct/2026 07:38:29] "[33mGET /static/js/static/icons/icon-128x128.png HTTP/1.1[0m" 404 -
+2026-10-22 07:38:29,926 127.0.0.1 - - [22/Oct/2026 07:38:29] "[33mGET /static/js/static/images/favicon.jpg HTTP/1.1[0m" 404 -
+2026-10-22 07:38:29,938 127.0.0.1 - - [22/Oct/2026 07:38:29] "[33mGET /static/js/static/icons/icon-512x512.png HTTP/1.1[0m" 404 -
+2026-10-22 07:38:29,941 127.0.0.1 - - [22/Oct/2026 07:38:29] "[33mGET /static/js/static/icons/mobile_screenshot.png HTTP/1.1[0m" 404 -
+2026-10-22 07:38:36,253 127.0.0.1 - - [22/Oct/2026 07:38:36] "GET /about HTTP/1.1" 200 -
+2026-10-22 07:38:36,431 127.0.0.1 - - [22/Oct/2026 07:38:36] "[36mGET /static/js/bootstrap.bundle.min.js HTTP/1.1[0m" 304 -
+2026-10-22 07:38:36,523 127.0.0.1 - - [22/Oct/2026 07:38:36] "[36mGET /static/css/bootstrap.min.css HTTP/1.1[0m" 304 -
+2026-10-22 07:38:36,525 127.0.0.1 - - [22/Oct/2026 07:38:36] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2026-10-22 07:38:36,702 127.0.0.1 - - [22/Oct/2026 07:38:36] "[36mGET /static/fonts/SpaceMono-Bold.woff2 HTTP/1.1[0m" 304 -
+2026-10-22 07:38:36,774 127.0.0.1 - - [22/Oct/2026 07:38:36] "[36mGET /static/js/serviceWorker.js HTTP/1.1[0m" 304 -
+2026-10-22 07:38:36,779 127.0.0.1 - - [22/Oct/2026 07:38:36] "[36mGET /static/fonts/SpaceMono-Regular.woff2 HTTP/1.1[0m" 304 -
+2026-10-22 07:38:37,193 127.0.0.1 - - [22/Oct/2026 07:38:37] "[36mGET /static/js/app.js HTTP/1.1[0m" 304 -
+2026-10-22 07:48:09,695 127.0.0.1 - - [22/Oct/2026 07:48:09] "GET /about HTTP/1.1" 200 -
+2026-10-22 07:48:10,241 127.0.0.1 - - [22/Oct/2026 07:48:10] "[36mGET /static/css/bootstrap.min.css HTTP/1.1[0m" 304 -
+2026-10-22 07:48:10,341 127.0.0.1 - - [22/Oct/2026 07:48:10] "[36mGET /static/js/bootstrap.bundle.min.js HTTP/1.1[0m" 304 -
+2026-10-22 07:48:10,346 127.0.0.1 - - [22/Oct/2026 07:48:10] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2026-10-22 07:48:10,602 127.0.0.1 - - [22/Oct/2026 07:48:10] "[36mGET /static/js/serviceWorker.js HTTP/1.1[0m" 304 -
+2026-10-22 07:48:10,814 127.0.0.1 - - [22/Oct/2026 07:48:10] "[36mGET /static/fonts/SpaceMono-Bold.woff2 HTTP/1.1[0m" 304 -
+2026-10-22 07:48:10,833 127.0.0.1 - - [22/Oct/2026 07:48:10] "[36mGET /static/fonts/SpaceMono-Regular.woff2 HTTP/1.1[0m" 304 -
+2026-10-22 07:48:11,567 127.0.0.1 - - [22/Oct/2026 07:48:11] "[36mGET /static/js/app.js HTTP/1.1[0m" 304 -
+2026-10-22 07:48:12,627 127.0.0.1 - - [22/Oct/2026 07:48:12] "[36mGET /static/images/favicon.png HTTP/1.1[0m" 304 -
+2026-10-22 07:48:15,675 127.0.0.1 - - [22/Oct/2026 07:48:15] "GET /about HTTP/1.1" 200 -
+2026-10-22 07:48:16,913 127.0.0.1 - - [22/Oct/2026 07:48:16] "[36mGET /static/css/bootstrap.min.css HTTP/1.1[0m" 304 -
+2026-10-22 07:48:16,934 127.0.0.1 - - [22/Oct/2026 07:48:16] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2026-10-22 07:48:16,938 127.0.0.1 - - [22/Oct/2026 07:48:16] "[36mGET /static/js/bootstrap.bundle.min.js HTTP/1.1[0m" 304 -
+2026-10-22 07:48:17,823 127.0.0.1 - - [22/Oct/2026 07:48:17] "[36mGET /static/fonts/SpaceMono-Regular.woff2 HTTP/1.1[0m" 304 -
+2026-10-22 07:48:17,832 127.0.0.1 - - [22/Oct/2026 07:48:17] "[36mGET /static/fonts/SpaceMono-Bold.woff2 HTTP/1.1[0m" 304 -
+2026-10-22 07:48:17,836 127.0.0.1 - - [22/Oct/2026 07:48:17] "[36mGET /static/js/serviceWorker.js HTTP/1.1[0m" 304 -
+2026-10-22 07:48:18,619 127.0.0.1 - - [22/Oct/2026 07:48:18] "[36mGET /static/js/app.js HTTP/1.1[0m" 304 -
+2026-10-22 07:48:19,588 127.0.0.1 - - [22/Oct/2026 07:48:19] "[36mGET /static/images/favicon.png HTTP/1.1[0m" 304 -
+2026-10-22 07:48:44,905 127.0.0.1 - - [22/Oct/2026 07:48:44] "GET /about HTTP/1.1" 200 -
+2026-10-22 07:48:45,202 127.0.0.1 - - [22/Oct/2026 07:48:45] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2026-10-22 07:48:45,205 127.0.0.1 - - [22/Oct/2026 07:48:45] "[36mGET /static/js/bootstrap.bundle.min.js HTTP/1.1[0m" 304 -
+2026-10-22 07:48:45,208 127.0.0.1 - - [22/Oct/2026 07:48:45] "[36mGET /static/css/bootstrap.min.css HTTP/1.1[0m" 304 -
+2026-10-22 07:48:45,704 127.0.0.1 - - [22/Oct/2026 07:48:45] "[36mGET /static/fonts/SpaceMono-Bold.woff2 HTTP/1.1[0m" 304 -
+2026-10-22 07:48:45,715 127.0.0.1 - - [22/Oct/2026 07:48:45] "[36mGET /static/js/serviceWorker.js HTTP/1.1[0m" 304 -
+2026-10-22 07:48:45,719 127.0.0.1 - - [22/Oct/2026 07:48:45] "[36mGET /static/fonts/SpaceMono-Regular.woff2 HTTP/1.1[0m" 304 -
+2026-10-22 07:48:45,902 127.0.0.1 - - [22/Oct/2026 07:48:45] "[36mGET /static/js/app.js HTTP/1.1[0m" 304 -
+2026-10-22 07:48:46,060 127.0.0.1 - - [22/Oct/2026 07:48:46] "[36mGET /static/images/favicon.png HTTP/1.1[0m" 304 -
+2026-10-22 07:53:04,133 127.0.0.1 - - [22/Oct/2026 07:53:04] "GET /about HTTP/1.1" 200 -
+2026-10-22 07:53:04,443 127.0.0.1 - - [22/Oct/2026 07:53:04] "[36mGET /static/css/bootstrap.min.css HTTP/1.1[0m" 304 -
+2026-10-22 07:53:04,456 127.0.0.1 - - [22/Oct/2026 07:53:04] "[36mGET /static/js/bootstrap.bundle.min.js HTTP/1.1[0m" 304 -
+2026-10-22 07:53:04,463 127.0.0.1 - - [22/Oct/2026 07:53:04] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2026-10-22 07:53:04,566 127.0.0.1 - - [22/Oct/2026 07:53:04] "[36mGET /static/fonts/SpaceMono-Regular.woff2 HTTP/1.1[0m" 304 -
+2026-10-22 07:53:04,570 127.0.0.1 - - [22/Oct/2026 07:53:04] "[36mGET /static/fonts/SpaceMono-Bold.woff2 HTTP/1.1[0m" 304 -
+2026-10-22 07:53:04,596 127.0.0.1 - - [22/Oct/2026 07:53:04] "GET /static/images/about_photo.JPEG HTTP/1.1" 200 -
+2026-10-22 07:53:04,681 127.0.0.1 - - [22/Oct/2026 07:53:04] "[36mGET /static/js/serviceWorker.js HTTP/1.1[0m" 304 -
+2026-10-22 07:53:04,767 127.0.0.1 - - [22/Oct/2026 07:53:04] "[36mGET /static/js/app.js HTTP/1.1[0m" 304 -
+2026-10-22 07:53:04,868 127.0.0.1 - - [22/Oct/2026 07:53:04] "[36mGET /static/images/favicon.png HTTP/1.1[0m" 304 -
