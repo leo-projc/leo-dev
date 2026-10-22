@@ -132,7 +132,7 @@ document.addEventListener("DOMContentLoaded", function () {
   }
 
   /* ========================================
-     CARD TEXT REVEAL
+     CARD TEXT AND PHOTO REVEAL
      ======================================== */
 
   const cards = document.querySelectorAll(".content-card");
@@ -140,12 +140,82 @@ document.addEventListener("DOMContentLoaded", function () {
     "(prefers-reduced-motion: reduce)",
   ).matches;
 
+  /*
+    The photo uses the same fade, blur, movement
+    and timing as the existing CSS text reveal.
+
+    No zoom and no additional delay.
+  */
+
+  const photoAnimations = new WeakMap();
+
   cards.forEach(function (card) {
     const textItems = card.querySelectorAll(".content-card-text > *");
 
     textItems.forEach(function (item, index) {
       item.style.setProperty("--reveal-order", index);
     });
+
+    const photo = card.querySelector(".about-photo");
+
+    if (
+      photo &&
+      !reduceMotion &&
+      "IntersectionObserver" in window &&
+      typeof photo.animate === "function"
+    ) {
+      /*
+        Match the text opacity and blur transition.
+      */
+
+      const fadeAndBlur = photo.animate(
+        [
+          {
+            opacity: 0,
+            filter: "blur(6px)",
+          },
+          {
+            opacity: 1,
+            filter: "blur(0)",
+          },
+        ],
+        {
+          duration: 650,
+          easing: "ease",
+          fill: "both",
+        },
+      );
+
+      /*
+        Match the text's upward movement.
+      */
+
+      const slideUp = photo.animate(
+        [
+          {
+            translate: "0 1.15rem",
+          },
+          {
+            translate: "0 0",
+          },
+        ],
+        {
+          duration: 650,
+          easing: "cubic-bezier(0.22, 1, 0.36, 1)",
+          fill: "both",
+        },
+      );
+
+      /*
+        Keep the image hidden until the card
+        enters the viewport.
+      */
+
+      fadeAndBlur.pause();
+      slideUp.pause();
+
+      photoAnimations.set(card, [fadeAndBlur, slideUp]);
+    }
 
     card.classList.add("card-reveal-ready");
   });
@@ -159,7 +229,26 @@ document.addEventListener("DOMContentLoaded", function () {
       function (entries, observer) {
         entries.forEach(function (entry) {
           if (entry.isIntersecting) {
+            /*
+              Reveal the text using its existing
+              CSS transitions.
+            */
+
             entry.target.classList.add("is-revealed");
+
+            /*
+              Reveal the photo at the same time,
+              using matching animation properties.
+            */
+
+            const animations = photoAnimations.get(entry.target);
+
+            if (animations) {
+              animations.forEach(function (animation) {
+                animation.play();
+              });
+            }
+
             observer.unobserve(entry.target);
           }
         });
